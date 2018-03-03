@@ -45,7 +45,6 @@ def parse_game_name(wiki_tokens):
 
 
 def build_dictionary(filename):
-
     bundles = dict()
     bundle_name = None
 
