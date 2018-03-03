@@ -59,7 +59,7 @@ def parse_game_name(wiki_str, verbose=False):
         game_name = game_name.replace('\'\'', '')
         game_name = game_name.replace('[', '')
         game_name = game_name.replace(']', '')
-        game_name.strip()
+        game_name = game_name.strip()
 
     else:
         game_name = None
