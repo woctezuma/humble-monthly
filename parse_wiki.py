@@ -10,36 +10,58 @@ def load_wiki_file(filename):
     return lines
 
 
-def parse_bundle_name(wiki_tokens):
+def parse_bundle_name(wiki_str):
+    # Tokenize
+    wiki_tokens = re.split('\|', wiki_str)
+
     bundle_name_prefix = 'Bundle='
 
+    # Find the token corresponding to the bundle name
     bundle_token = [s for s in wiki_tokens if s.startswith(bundle_name_prefix)]
 
+    # Extract the bundle name
     bundle_name = re.split('\'\'\'', bundle_token[0])[1]
 
     return bundle_name
 
 
-def parse_game_name(wiki_tokens):
+def parse_game_name(wiki_str):
+    # Tokenize and strip
+    wiki_tokens = [s.strip() for s in re.split('\|', wiki_str)]
+
     game_name_prefix = 'title'
+    game_name_suffix = 'Developer'
 
-    game_token = [s for s in wiki_tokens if s.startswith(game_name_prefix)]
+    # Check whether there is a game name among the tokens
+    if any(s.startswith(game_name_prefix) for s in wiki_tokens):
 
-    if len(game_token) == 0:
-        game_name = None
+        # Find the tokens corresponding to the game name
+        ind_start = [count for (count, s) in enumerate(wiki_tokens) if s.startswith(game_name_prefix)]
+        ind_end = [count for (count, s) in enumerate(wiki_tokens) if s.startswith(game_name_suffix)]
+
+        if len(ind_end) > 0:
+            game_token = ' | '.join(wiki_tokens[ind_start[0]:ind_end[0]])
+        else:
+            game_token = ' | '.join(wiki_tokens[ind_start[0]:])
+
+        # Extract the game name
+        game_element = re.split('title=', game_token)
+        game_name = game_element[-1]
+
+        # Remove any hyperlink
+        hyperlink_tokens = re.split('\|', game_name)
+        if len(hyperlink_tokens) > 1:
+            print(hyperlink_tokens)
+            game_name = hyperlink_tokens[-1]
+
+        # Further strip the game name
+        game_name = game_name.replace('\'\'', '')
+        game_name = game_name.replace('[', '')
+        game_name = game_name.replace(']', '')
+        game_name.strip()
+
     else:
-
-        # Parse Wiki entries for which the game title is a hyperlink
-        game_element = re.split('\[\[|\]', game_token[0])
-        try:
-            game_name = game_element[1]
-        except IndexError:
-            # Parse Wiki entries for which the game title is NOT a hyperlink
-            game_name = re.split('\'', game_element[0])[2]
-
-        # Filter Wiki disambiguation text for video games
-        disambiguation_text = '(video game)'
-        game_name = game_name.rsplit(disambiguation_text)[0].strip()
+        game_name = None
 
     return game_name
 
@@ -53,20 +75,18 @@ def build_dictionary(filename):
 
     lines = load_wiki_file(filename)
 
-    for l in lines:
-        wiki_tokens = re.split('\|', l)
+    for wiki_str in lines:
+        if wiki_str.startswith(bundle_entry_prefix):
+            bundle_name = parse_bundle_name(wiki_str)
 
-        if l.startswith(bundle_entry_prefix):
-            bundle_name = parse_bundle_name(wiki_tokens)
-
-            game_name = parse_game_name(wiki_tokens)
+            game_name = parse_game_name(wiki_str)
 
             bundles[bundle_name] = []
             if game_name is not None:
                 bundles[bundle_name].append(game_name)
 
-        elif l.startswith(game_entry_prefix):
-            game_name = parse_game_name(wiki_tokens)
+        elif wiki_str.startswith(game_entry_prefix):
+            game_name = parse_game_name(wiki_str)
             bundles[bundle_name].append(game_name)
         else:
             continue
