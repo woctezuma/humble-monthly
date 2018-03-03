@@ -96,6 +96,6 @@ def build_dictionary(filename):
 
 
 if __name__ == '__main__':
-    filename = 'wiki_humble_monthly.txt'
+    filename = 'data/wiki_humble_monthly.txt'
     bundles = build_dictionary(filename)
     print(bundles)
