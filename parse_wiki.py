@@ -4,7 +4,7 @@ import re
 def load_wiki_file(filename):
     relevant_prefix = '{{Bundle'
 
-    with open(filename) as f:
+    with open(filename, encoding='utf8') as f:
         lines = [l.strip() for l in f.readlines() if l.startswith(relevant_prefix)]
 
     return lines
