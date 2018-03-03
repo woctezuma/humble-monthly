@@ -132,6 +132,41 @@ if __name__ == '__main__':
     # Manually check mismatches
     for game_name in sorted(game_names):
         if matched_meta_data_dict[game_name]['Levenshtein-distance'][0] > 0:
-            print('\n')
-            print(game_name)
-            print(matched_meta_data_dict[game_name]['matched-name'][0])
+            print('\'' + game_name + '\'\t:\t\'' + matched_meta_data_dict[game_name]['matched-name'][0] + '\',')
+
+    # Manually fix mismatches
+    hard_coded_matches = {
+        # Correct matches
+        'ABZÛ': 'ABZU',
+        'Ashes of the Singularity:Escalation': 'Ashes of the Singularity: Escalation',
+        'Company of Heroes 2 (+2 DLCs)': 'Company of Heroes 2',
+        'Cthulhu Realms - Full Version': 'Cthulhu Realms',
+        'Event0': 'Event[0]',
+        'Fidel - Dungeon Rescue': 'Fidel Dungeon Rescue',
+        'Kingdom: New Lands Royal Edition': 'Kingdom: New Lands',
+        'Legend of Grimrock II': 'Legend of Grimrock 2',
+        'Nongünz': 'Nongnz',
+        'One Piece: Pirate Warriors 3': 'One Piece Pirate Warriors 3',
+        'Sentinels of the Multiverse The Video Game': 'Sentinels of the Multiverse',
+        'The Uncertain - Episode 1: The Last Quiet Day': 'The Uncertain: Episode 1 - The Last Quiet Day',
+        # Fixes for mismatches
+        'Brigador': '274500',
+        'Civilization VI': '289070',
+        'GoNNER - Press Jump To Die Edition': '437570',
+        'Hiveswap': '623940',
+        'Jotun': '323580',
+        'Layers Of Fear Masterpiece Edition': '391720',
+        'NEON STRUCT: Die Augen der Welt': '310740',
+        'Okhlos': '400180',
+        'Orwell': '491950',
+        'Payday 2 (+ DLCs)': '218620',
+        'Pillars of Eternity - Hero Edition': '291650',
+        'RIVE': '278100',
+        'Renowned Explorers': '296970',
+        'Shoppe Keep Deluxe Edition': '381120',
+        'Stikbold!': '429330',
+        'Strafe': '442780',
+        'Tailwind Prologue': '674800',
+        'The Elder Scrolls Online': '306130',
+        'Uurnog': '678850',
+    }
