@@ -1,0 +1,381 @@
+# Reference: https://en.wikipedia.org/wiki/List_of_Humble_Bundles#Humble_Monthly_Bundles
+
+== Humble Monthly Bundles ==
+
+===2015===
+
+{{BundleStart}}
+
+{{BundleFirstRow|rowspan=8|Bundle='''November 2015 Humble Monthly Bundle'''<ref name="epicbundle">[http://www.epicbundle.com/bundle/humble-bundle-monthly ''Humble Monthly Bundle''] at epicbundle.com</ref><ref>[https://www.humblebundle.com/monthly/p/november_2015_monthly ''This was the November 2015 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=October 2015|MTA=|title=''[[Saints Row IV]]''|Developer=[[Volition (company)|Volition]]|Year=2013|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Besiege (video game)|Besiege]]''|Developer=Spiderling Studios|Release=2015}}
+{{Bundle|MTA=|title=''[[Valkyria Chronicles]]''|Developer=[[Sega]]|Release=2014}}
+{{Bundle|MTA=|title=''[[Lethal League]]''|Developer=Team Reptile|Release=2014}}
+{{Bundle|MTA=|title=''[[SanctuaryRPG]]: Black Edition''|Developer=[[Black Shell Games]]|Release=2015}}
+{{Bundle|MTA=|title=''[[TowerFall]] Ascension''|Developer=Matt Thorson|Release=2014}}
+{{Bundle|MTA=|title=''[[Legend of Grimrock II]]''|Developer=Almost Human Ltd.|Release=2014}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* ''Legend of Grimrock II'' was a Preorder Bonus }}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''December 2015 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/december_2015_monthly ''This was the December 2015 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=November 2015
+|MTA=|title=''[[Banished (video game)|Banished]]''|Developer=Shining Rock Software|Year=2014|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Rust (video game)|Rust]]''|Developer=[[Facepunch Studios]]|Release=2013}}
+{{Bundle|MTA=|title=''[[Payday 2]]''|Developer=[[Overkill Software]]|Release=2013}}
+{{Bundle|MTA=|title=''[[Neon Struct|NEON STRUCT: Die Augen der Welt]]''|Developer=Minor Key Games|Release=2015}}
+{{Bundle|MTA=|title=''[[Chroma Squad]]''|Developer=[[Behold Studios]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Company of Heroes 2]]'' (+2 DLCs)|Developer=[[Relic Entertainment]]|Release=2014}}
+{{Bundle|MTA=|title=''[[TowerFall]] Ascension''|Developer=Matt Thorson|Release=2014}}
+{{Bundle|MTA=|title=''[[Shadwen]]'' (Bonus Sneak Peek)|Developer=[[Frozenbyte]]|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* ''Company of Heroes 2'' included the DLCs "The Western Front Armies" and "The British Forces".
+* ''Shadwen'' was a Bonus Sneak Peek
+* Charity: Water}}}}
+{{BundleEnd}}
+
+===2016===
+{{BundleStart}}
+{{BundleFirstRow|rowspan=9|Bundle='''January 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/january_2016_monthly ''This was the January 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=December 2015
+|MTA=|title=''[[The Talos Principle]]''|Developer=[[Croteam]]|Year=2014|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''The Masterplan''|Developer=Shark Punch|Release=2015}}
+{{Bundle|MTA=|title=''[[Mushroom 11]]''|Developer=Untame|Release=2015}}
+{{Bundle|MTA=|title=''[[Grim Fandango#Remastered version|Grim Fandango Remastered]]''|Developer=[[Double Fine Productions]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Spelunky]]''|Developer=Mossmouth|Release=2013}}
+{{Bundle|MTA=|title=''[[A Fistful of Gun]]''|Developer=[[FarmerGnome]]|Release=2015}}
+{{Bundle|MTA=|title=''[[TowerFall]] Ascension''|Developer=Matt Thorson|Release=2014}}
+{{Bundle|MTA=|title=''[[Payday 2]]'' (+ DLCs)|Developer=[[Overkill Software]]|Release=2013}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* ''Payday 2'' including DLCs was the Preorder bonus.
+* Charity: Watsi}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''February 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/february_2016_monthly ''This was the February 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=January 2016
+|MTA=|title=''[[Alien Isolation]]''|Developer=[[Creative Assembly]]|Year=2014|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Titan Souls]]''|Developer=Acid Nerve|Release=2015}}
+{{Bundle|MTA=|title=''[[Broken Age]]''|Developer=[[Double Fine Productions]]|Release=2014}}
+{{Bundle|MTA=|title=''[[Volume]]''|Developer=[[Mike Bithell]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Penarium]]''|Developer=SelfMade Miracle|Release=2015}}
+{{Bundle|MTA=|title=''[[Dropsy]]''|Developer=[[Jay Tholen, A Jolly Corpse]]|Release=2015}}
+{{Bundle|MTA=|title=''Elephant in the Room''|Developer=Humble Original|Release=2016}}
+{{Bundle|MTA=|title=''Planetoid Pioneers Sneak Peek'' |Developer=[[Data Realms]]|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: Action Against Hunger}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''March 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/march_2016_monthly ''This was the March 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=February 2016
+|MTA=|title=''[[Wasteland_2#|Wasteland 2: Directors Cut]]''|Developer=[[inXile Entertainment]], [[Obsidian Entertainment]]|Year=2014|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Grav]]''|Developer=[[BitMonster,Inc.]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Shantae and the Pirate's Curse]]''|Developer=[[WayForward Technologies]]|Release=2014}}
+{{Bundle|MTA=|title=''[[I Am Bread]]''|Developer=[[Bossa Studios]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Sentinels of the Multiverse The Video Game]]''|Developer=[[Handelbra Games Inc.]]|Release=2014}}
+{{Bundle|MTA=|title=''[[Ark: Survival Evolved]]''|Developer=[[Studio Wildcard]], [[Virtual Basement]], [[Instinct Games]], [[Efecto Studios]]|Release=2016}}
+{{Bundle|MTA=|title=''Battlesloths'' |Developer=Humble Original|Release=2016}}
+{{Bundle|MTA=|title=''Switchcars'' |Developer=Humble Original|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: SpecialEffect}}}}
+
+{{BundleFirstRow|rowspan=10|Bundle='''April 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/april_2016_monthly ''This was the April 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=March 2016
+|MTA=|title=''[[South Park: The Stick of Truth]]''|Developer=[[South Park Digital Studios]], [[Obsidian Entertainment]]|Year=2014|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[This War of Mine]]''|Developer=[[11 bit studios]]|Release=2014}}
+{{Bundle|MTA=|title=''[[Nuclear Throne]]''|Developer=[[Vlambeer]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Renowned Explorers]]''|Developer=[[Abbey Games]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Nova-111]]''|Developer=[[Funktronic Labs]]|Release=2015}}
+{{Bundle|MTA=|title=''[[The Magic Circle (video game)|The Magic Circle]]''|Developer=Question|Release=2015}}
+{{Bundle|MTA=|title=''[[Avalanche 2: Super Avalanche]]'' |Developer=[[Beast Games]]|Release=2015}}
+{{Bundle|MTA=|title=''Tailwind Prologue'' |Developer=Humble Original|Release=2016}}
+{{Bundle|MTA=|title=''Stikbold!'' |Developer=Humble Original|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: World Land Trust}}}}
+
+{{BundleFirstRow|rowspan=10|Bundle='''May 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/may_2016_monthly ''This was the May 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=April 2016
+|MTA=|title=''[[Mad Max (2015 video game)|Mad Max]]''|Developer=[[Avalanche Studios]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Infinifactory]]''|Developer=[[Zachtronics Industries]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Crawl (video game)|Crawl]]''|Developer=[[Powerhoof]]|Release=2014}} 
+{{Bundle|MTA=|title=''[[Galak-Z]]''|Developer=[[17-BIT]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Oddworld: New 'n' Tasty]]''|Developer=[[Just Add Water (company)|Just Add Water]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Fran Bow]]''|Developer=[[Killmonday Games AB]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[JumpJet Rex]]''|Developer=[[TreeFortress Games]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[1993 Space Machine]]''|Developer=[[Modesty]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Gunmetal Arcadia Zero]]''|Developer=[[Minor Key Games]] (Humble Original)|Release=2016}} 
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: Wikimedia Foundation}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''June 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/june_2016_monthly ''This was the June 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=May 2016
+|MTA=|title=''[[Rocket League]]''|Developer=[[Psyonix]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[The Forest (video game)|The Forest]]''|Developer=[[Endnight Games]]|Release=2014}}
+{{Bundle|MTA=|title=''[[Planetary Annihilation: Titans]]''|Developer=[[Uber Entertainment]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Keep Talking and Nobody Explodes]]''|Developer=[[Steel Crate Games]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Dungeon of the Endless]]''|Developer=[[Amplitude Studios]]|Release=2014}} 
+{{Bundle|MTA=|title=''[[Steredenn]]''|Developer=[[Pixelnest Studio]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[WASTED]]''|Developer=[[Mr. Podunkian]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Cat Girl Without Salad]]''|Developer=[[WayForward]] (Humble Original)|Release=2016}} 
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: Willow Foundation}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''July 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/july_2016_monthly ''This was the July 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=June 2016
+|MTA=|title=''[[Hurtworld]]''|Developer=[[Bankroll Studios]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Kentucky Route Zero]]''|Developer=[[Cardboard Computer]]|Release=2013}}
+{{Bundle|MTA=|title=''[[Satellite Reign]]''|Developer=[[5 Lives Studios]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[TIS-100]]''|Developer=[[Zachtronics]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[The Red Solstice]]''|Developer=[[Ironward]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Avernum 2: Crystal Souls]]''|Developer=[[Spiderweb Software]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Cthulhu Realms]] - Full Version''|Developer=[[White Wizard Games]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Copoka]]''|Developer=Humble Original|Release=2016}} 
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: The AbleGamers Foundation}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''August 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/august_2016_monthly ''This was the August 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=July 2016
+|MTA=|title=''[[Call of Duty: Black Ops III]] Multiplayer Starter Pack''|Developer=[[Treyarch]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[The Incredible Adventures of Van Helsing: Final Cut]]''|Developer=[[NeocoreGames]]|Release=2015}}
+{{Bundle|MTA=|title=''[[The Jackbox Party Pack 2]]''|Developer=[[Jackbox Games|Jackbox Games, Inc.]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Poi (video game)|Poi]]''|Developer=[[PolyKid]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Planet of the Eyes]]''|Developer=[[Cococucumber]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Starward Rogue]]''|Developer=[[Arcen Games|Arcen Games, LLC]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Random Access Murder]]''|Developer=[[Team Murder]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Disc Room]]''|Developer=Humble Original|Release=2016}} 
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: Make-A-Wish}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''September 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/september_2016_monthly ''This was the September 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=August 2016
+|MTA=|title=''[[Soma (video game)|SOMA]]''|Developer=[[Frictional Games]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[The Banner Saga]]''|Developer=[[Stoic Studio|Stoic]]|Release=2014}} 
+{{Bundle|MTA=|title=''[[WWE 2K16]]''|Developer=[[Visual Concepts]], [[Yuke's]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Sheltered (video game)|Sheltered]]''|Developer=[[Unicube]], [[Team17]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Epistory]] - Typing Chronicles''|Developer=[[Fishing Cactus]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Town of Salem]]''|Developer=[[BlankMediaGames]]|Release=2014}} 
+{{Bundle|MTA=|title=''[[The Uncertain]] - Episode 1: The Last Quiet Day''|Developer=Sneak Peek Demo|Release=2016}} 
+{{Bundle|MTA=|title=''[[Spoolside]]''|Developer=[[Gloam Collective]] (Humble Original)|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: American Red Cross}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''October 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/october_2016_monthly ''This was the October 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=September 2016
+|MTA=|title=''[[Grim Dawn]]''|Developer=[[Crate Entertainment]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Slime Rancher]]''|Developer=[[Monomi Park]]|Release=2014}} 
+{{Bundle|MTA=|title=''[[Hotline Miami 2: Wrong Number]]''|Developer=[[Dennaton Games]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[Deponia Doomsday]]''|Developer=[[Daedalic Entertainment]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Train Valley]]''|Developer=Alexey Davydov, Sergey Dvoynikov, Timofey Shargorodskiy|Release=2015}} 
+{{Bundle|MTA=|title=''[[Action Henk]]''|Developer=[[RageSquid]]|Release=2015}} 
+{{Bundle|MTA=|title=''[[THOTH]]''|Developer=[[Carlsen Games]]|Release=2016}} 
+{{Bundle|MTA=|title=''[[Fidel - Dungeon Rescue]]''|Developer=(Humble Original)|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: Direct Relief}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''November 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/november_2016_monthly ''This was the November 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=October 2016
+|MTA=|title=''[[Stardew Valley]]''|Developer=[[ConcernedApe]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Broforce]]''|Developer=[[Free Lives]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Rebel Galaxy]]''|Developer=[[Double Damage Games]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Beyond Eyes]]''|Developer=[[Tiger and Squid]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Kathy Rain]]''|Developer=[[Clifftop Games]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Styx: Master of Shadows]]''|Developer=[[Cyanide (company)]]|Release=2014}}
+{{Bundle|MTA=|title=''[[Pirate Pop Plus]]''|Developer=[[dadako]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Keyboard Sports: the final tribute]]''|Developer=Triband|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[Call of Duty Endowment]]}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''December 2016 Humble Monthly Bundle'''<ref name="epicbundle" /><ref>[https://www.humblebundle.com/monthly/p/december_2016_monthly  ''This was the December 2016 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=November 2016
+|MTA=|title=''[[Dragon's Dogma]]''|Developer=[[Capcom]]|Year=2012|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[The Escapists]]''|Developer=[[Mouldy Toof Studios]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Mordheim: City of the Damned]]''|Developer=[[Rogue Factor]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Hacknet]]''|Developer=[[Team Fractal Alligator]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Western Press]]''|Developer=[[Bandit-1]]|Release=2016}}
+{{Bundle|MTA=|title=''[[The Flame in the Flood]]''|Developer=[[The Molasses Flood]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Minion Masters]]''|Developer=[[BetaDwarf]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Yojimbrawl!]]''|Developer=[[Free Lives]] (Humble Original)|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[Save the children]]}}}}
+{{BundleEnd}}
+
+===2017===
+
+{{BundleStart}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''January 2017 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/december_2016_monthly  ''This was the January 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=December 2016
+|MTA=|title=''[[Warhammer: End Times - Vermintide]]''|Developer=[[Fatshark]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Project CARS]]''|Developer=[[Slightly Mad Studios]]|Release=2015}}
+{{Bundle|MTA=|title=''[[The Legend of Heroes: Trails in the Sky]]''|Developer=[[Nihon Falcom]]|Release=2014}}
+{{Bundle|MTA=|title=''[[Mother Russia Bleeds]]''|Developer=[[Le Cartel Studio]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Neon Chrome]]''|Developer=[[10tons Ltd.]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Jotun (video game)|Jotun]]''|Developer=[[Thunder Lotus Games]]|Release=2015}}
+{{Bundle|MTA=|title=''[[HoPiKo]]''|Developer=[[Laser Dog Games]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Kimmy]]''|Developer= (Humble Original)|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[World Wildlife Fund]]}}}}
+
+{{BundleFirstRow|rowspan=10|Bundle='''February 2017 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/december_2016_monthly  ''This was the February 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=January 2017
+|MTA=|title=''[[XCOM 2]]''|Developer=[[Firaxis Games]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Ryse: Son of Rome]]''|Developer=[[Crytek]]|Release=2014}}
+{{Bundle|MTA=|title=''[[Abzû (video game)|ABZÛ]]''|Developer=[[Giant Squid (company)]]|Release=2016}}
+{{Bundle|MTA=|title=''[[SteamWorld Heist]]''|Developer=[[Image & Form]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Okhlos]]''|Developer=[[Coffee Powered Machine]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Project Highrise]]''|Developer=[[SomaSim]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Husk]]''|Developer=[[UndeadScout]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Oh, Deer!]] (Beta Version)''|Developer=[[Necrosoft Games]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Hollow Knight (Sneak Peek)]]''|Developer=[[Hollow Knight|Team Cherry]]|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[Worldreader]]}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''March 2017 Humble Monthly Bundle'''<ref name="humblebundle.com">[https://www.humblebundle.com/monthly/p/december_2016_monthly  ''This was the March 2017 Humble Monthly Bundle.''] at humblebundle.com</ref><ref name="Nifflas' Games press sheet">[http://uurnog.com/presskit/sheet.php?p=uurnog  ''Nifflas' Games press sheet''] at uurnog.com</ref>|Period=February 2017
+|MTA=|title=''[[Total War: Warhammer]]''|Developer=[[Creative Assembly]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Poly Bridge]]''|Developer=[[Dry Cactus]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Space Run Galaxy]]''|Developer=[[Passtech Games]]|Release=2016}}
+{{Bundle|MTA=|title=''[[One Piece: Pirate Warriors 3]]''|Developer=[[KOEI TECMO GAMES CO., LTD]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Flat Heroes]]''|Developer=[[Parallel Circles]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Rive (video game)|RIVE]]''|Developer=[[Two Tribes (company)]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Morphblade]]''|Developer=[[Suspicious Developments]]|Release=2017}}
+{{Bundle|MTA=|title=''[[Uurnog]]''|Developer=[[Nifflas' Games]]  (Humble Original)|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[zidisha]]}}}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''April 2017 Humble Monthly Bundle'''<ref name="humblebundle.com">[https://www.humblebundle.com/monthly/p/december_2016_monthly  ''This was the March 2017 Humble Monthly Bundle.''] at humblebundle.com</ref><ref name="Nifflas' Games press sheet">[http://uurnog.com/presskit/sheet.php?p=uurnog  ''Nifflas' Games press sheet''] at uurnog.com</ref>|Period=March 2017
+|MTA=|title=''[[The Witness (2016 video game)|The Witness]]''|Developer=[[Thekla, Inc.]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Layers of Fear|Layers Of Fear Masterpiece Edition]]''|Developer=[[Bloober Team]]|Release= 2016}}
+{{Bundle|MTA=|title=''[[Black Mesa (video game)|Black Mesa]]''|Developer=[[Crowbar Collective]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Kingdom: New Lands Royal Edition]]''|Developer=[[Noio]]|Release=2016}}
+{{Bundle|MTA=|title=''Event[0]''|Developer=[[Ocelot Society]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Tumblestone]]''|Developer=[[The Quantum Astrophysicists Guild]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Slime-san]]''|Developer=[[Fabraz]]|Release=2017}}
+{{Bundle|MTA=|title=''[[Jawns]]''|Developer=[[Cipher Prime]]  (Humble Original)|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity:[[Extra Life]]}}}}
+
+{{BundleFirstRow|rowspan=11|Bundle='''May 2017 Humble Monthly Bundle'''<ref name="humblebundle.com">[https://www.humblebundle.com/monthly/p/december_2016_monthly  ''This was the March 2017 Humble Monthly Bundle.''] at humblebundle.com</ref><ref name="Nifflas' Games press sheet">[http://uurnog.com/presskit/sheet.php?p=uurnog  ''Nifflas' Games press sheet''] at uurnog.com</ref>|Period=April 2017
+|MTA=|title=''[[Dirt Rally]]''|Developer=[[Codemasters]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Inside (video game)|Inside]]''|Developer=[[Playdead]]|Release=2016}}
+{{Bundle|MTA=|title=''[[This Is The Police]]''|Developer=[[Weappy Studio]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Undertale]]''|Developer=[[tobyfox]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Metrico|Metrico+]]''|Developer=[[Digital Dreams]]|Release=2016}}
+{{Bundle|MTA=|title=''[[GoNNER - Press Jump To Die Edition]]''|Developer=[[Art in Heart]]|Release=2016}}
+{{Bundle|MTA=|title=''[[The Turing Test (video game)|The Turing Test]]''|Developer=[[Bulkhead Interactive]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Super Rude Bear Resurrection]]''|Developer=[[Alex Rose Games|Alex Rose]]|Release=2017}}
+{{Bundle|MTA=|title=''[[Kevin Eastman's Underwhere#1]]''|Developer=[[Kevin Eastman]] (Humble Comics)|Release=2017}}
+{{Bundle|MTA=|title=''[[A2Be - A Science Fiction Narrative]]''|Developer=[[Vagabond Dog]] (Humble Original)|Release=}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* This is the first Humble Monthly Bundle that included a comic.
+* Charity:[[Watsi]]}}}}
+
+{{BundleFirstRow|rowspan=10|Bundle='''June 2017 Humble Monthly Bundle'''<ref name="humblebundle.com">[https://www.humblebundle.com/monthly/p/december_2016_monthly  ''This was the March 2017 Humble Monthly Bundle.''] at humblebundle.com</ref><ref name="Nifflas' Games press sheet">[http://uurnog.com/presskit/sheet.php?p=uurnog  ''Nifflas' Games press sheet''] at uurnog.com</ref>|Period=May 2017
+|MTA=|title=''[[Stellaris (video game)|Stellaris]]''|Developer=[[Paradox Development Studio|Paradox]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Kevin Eastman's Underwhere#1-2]]''|Developer=[[Kevin Eastman]] (Humble Comics)|Release=2017}}
+{{Bundle|MTA=|title=''[[Plague Inc|Plague Inc: Evolved]]''|Developer=''[[Ndemic Creations]]'' | Release=2014 }}
+{{Bundle|MTA=|title=''[[SUPERHOT|Superhot]]''|Developer=Superhot Team| Release=2016}}
+{{Bundle|MTA=|title=''[[Ashes of the Singularity|Ashes of the Singularity:Escalation]]''|Developer=[[Oxide Games]] / [[Stardock|Stardock Entertainment]] |Release=2016}}
+{{Bundle|MTA=|title=''[[Brigador]]''|Developer=[[Stellar Jockeys]]|Release=2015}}
+{{Bundle|MTA=|title=''[[Shoppe Keep|Shoppe Keep Deluxe Edition]]'' | Developer=Arvydas Žemaitis |Release=2016}}
+{{Bundle|MTA=|title=''Maize''|Developer=[[Finish Line Games]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Tiny Echo]]''|Developer=(Humble Original)|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[Charity: Water|Water]]}}
+}}
+
+{{BundleFirstRow|rowspan=10|Bundle='''July 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/july_2017_monthly  ''This was the July 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=June 2017
+|MTA=|title=''[[Galactic Civilizations III]]''|Developer=[[Stardock]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Hyper Light Drifter]]''|Developer=[[Heart Machine]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Dark Souls II]]''|Developer=''[[FromSoftware]]'' | Release=2014 }}
+{{Bundle|MTA=|title=''[[Armello]]''|Developer=League of Geeks| Release=2015}}
+{{Bundle|MTA=|title=''[[SimplePlanes]]''|Developer=[[Jundroo LLC]] |Release=2015}}
+{{Bundle|MTA=|title=''[[Sherlock Holmes: The Devil's Daughter]]''|Developer=[[Frogwares]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Kero Blaster]]'' | Developer=[[Studio Pixel]] |Release=2014}}
+{{Bundle|MTA=|title=''[[Kevin Eastman's Underwhere#1-3]]''|Developer=[[Kevin Eastman]] (Humble Comics)|Release=2017}}
+{{Bundle|MTA=|title=''[[2000:1 A Space Felony ]]''|Developer=(Humble Original)|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[Charity: Water|Water]]}}
+}}
+
+{{BundleFirstRow|rowspan=10|Bundle='''August 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/august_2017_monthly  ''This was the August 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=July 2017
+|MTA=|title=''[[One Piece Burning Blood]]''|Developer=[[Spike Chunsoft]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Offworld Trading Company]]''|Developer=[[Mohawk Games]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Pillars of Eternity|Pillars of Eternity - Hero Edition]]''|Developer=[[Obsidian Entertainment]] | Release=2015 }}
+{{Bundle|MTA=|title=''[[NBA 2K17]]''|Developer=[[Visual Concepts]]| Release=2016}}
+{{Bundle|MTA=|title=''[[War for the Overworld]]''|Developer=[[Brightrock Games]] |Release=2015}}
+{{Bundle|MTA=|title=''[[Overcooked]]''|Developer=[[Ghost Town Games]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Wuppo]]'' | Developer=[[Knuist & Perzik]] |Release=2016<ref>[http://store.steampowered.com/app/400630/Wuppo/ ''Wuppo on Steam''] at SteamPowered.com</ref>}}
+{{Bundle|MTA=|title=''[[Nongünz]]''|Developer=[[Brainwash Gang]]|Release=2017<ref>[http://store.steampowered.com/app/633130/Nongnz/ ''Nongünz on Steam''] at SteamPowered.com</ref>}}
+{{Bundle|MTA=|title=''[[Kevin Eastman's Underwhere#1-4]]''|Developer=[[Kevin Eastman]] (Humble Comics)|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[Charity: Water|Water]]}}
+}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''September 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/September_2017_monthly  ''This was the September 2017 Humble Monthly Bundle.''] {{webarchive|url=https://web.archive.org/web/20171107222255/https://www.humblebundle.com/monthly/p/september_2017_monthly |date=November 7, 2017 }} at humblebundle.com</ref>|Period=August 2017
+|MTA=|title=''[[The Banner Saga 2]]''|Developer=[[Stoic Studio]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|MTA=|title=''[[Momodora: Reverie Under the Moonlight]]''|Developer=[[Bombservice]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Killing Floor 2]]''|Developer=[[Tripwire interactive]]|Release=2016}}
+{{Bundle|MTA=|title=''[[Worms W.M.D]]''|Developer=[[Team17]]|Release=2016}}
+{{Bundle|MTA=|title=''Stories Untold''|Developer=No Code|Release=2017}}
+{{Bundle|MTA=|title=''[[HackyZack]]''|Developer=[[Spaceboy Games]]|Release=2017}}
+{{Bundle|MTA=|title=''[[Eterium]]''|Developer=[[Rogue Earth LLC]]|Release=2014}}
+{{Bundle|MTA=|title=''[[Volantia: Kingdom in the Sky]]''|Developer=[[Tangled Mess Games]]|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[The AbleGamers Foundation|AbleGamers]]}}
+}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''October 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/October_2017_monthly  ''This was the October 2017 Humble Monthly Bundle.''] {{webarchive|url=https://web.archive.org/web/20171115004650/https://www.humblebundle.com/monthly/p/october_2017_monthly |date=November 15, 2017 }} at humblebundle.com</ref>|Period=September 2017
+|title=''[[Wargame: Red Dragon]]''|Developer=[[Eugen Systems]]|Year=2014|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|title=''[[Furi]]''|Developer=[[The Game Bakers]]|Release=2016}}
+{{Bundle|title=''[[Rise of the Tomb Raider]]''|Developer=[[Crystal Dynamics]]|Release=2015}}
+{{Bundle|title=''[[Orwell (video game)|Orwell]]''|Developer=[[Osmotic]]|Release=2016}}
+{{Bundle|title=''[[Seasons After Fall]]''|Developer=[[Swing Swing Sumbarine]]|Release=2016}}
+{{Bundle|title=''[[The Shrouded Isle]]''|Developer=[[Kitfox Games]]|Release=2017}}
+{{Bundle|title=''[[Scanner Sombre]]''|Developer=[[Introversion Software]]|Release=2017}}
+{{Bundle|title=''[[Getting Over It with Bennett Foddy]]''|Developer=[[Bennett Foddy]]|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[Action Against Hunger]]}}
+}}
+
+{{BundleFirstRow|rowspan=11|Bundle='''November 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/November_2017_monthly  ''This was the November 2017 Humble Monthly Bundle.''] {{webarchive|url=https://web.archive.org/web/20171106164618/https://www.humblebundle.com/monthly/p/november_2017_monthly |date=November 6, 2017 }} at humblebundle.com</ref>|Period=October 2017
+|title=''[[Resident Evil 5|Resident Evil 5 Gold Edition]]''|Developer=[[Capcom]]|Year=2009|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|title=''[[Shadow Tactics: Blades of the Shogun]]''|Developer=[[Mimimi Productions]]|Release=2016}}
+{{Bundle|title=''[[The Elder Scrolls Online]]''|Developer=[[ZeniMax Online Studios]]|Release=2014}}
+{{Bundle|title=''[[Quake Champions]]''|Developer=[[id Software]]|Release=2016}}
+{{Bundle|title=''[[The Elder Scrolls: Legends]]''|Developer=[[Dire Wolf Digital]]|Release=2017}}
+{{Bundle|title=''[[Dead Rising 2]]''|Developer=[[Blue Castle Games]]|Release=2010}}
+{{Bundle|title=''[[Silence (video game)|Silence]]''|Developer=[[Daedalic Entertainment]]|Release=2016}}
+{{Bundle|title=''[[Emily is Away Too]]''|Developer=[[Kyle Seeley]]|Release=2017}}
+{{Bundle|title=''[[World to the West]]''|Developer=[[Rain Games]]|Release=2017}}
+{{Bundle|title=''[[Wilmot's Warehouse]]''|Developer=Richard Hogg|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[SpecialEffect]]}}
+}}
+
+{{BundleFirstRow|rowspan=11|Bundle='''December 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/december_2017_monthly  ''This was the December 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=November 2017
+|title=''[[Rivals of Aether]]''|Developer=[[Dan Fornace]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|title=''[[H1Z1]]''|Developer=[[Daybreak Game Company]]|Release=2016}}
+{{Bundle|title=''[[BlazBlue: Calamity Trigger]]''|Developer=[[Arc System Works]]|Release=2008}}
+{{Bundle|title=''[[Nex Machina]]''|Developer=[[Housemarque]]|Release=2017}}
+{{Bundle|title=''[[The Sexy Brutale]]''|Developer=[[Tequila Works]],[[Cavalier Game Studios]]|Release=2017}}
+{{Bundle|title=''[[Strafe]]''|Developer=[[Pixel Titans]]|Release=2017}}
+{{Bundle|title=''[[Passpartout: The Starving Artist]]''|Developer=[[Flamebait Games]]|Release=2017}}
+{{Bundle|title=''[[Way of the Passive Fist (Exclusive Sneak Peek)]]''|Developer=[[Household Games Inc.]]|Release=2018}}
+{{Bundle|title=''[[THOR.N ]]''|Developer=[[Advect Productions]]|Release=2017}}
+{{Bundle|title=''Crescent Bay''|Developer=[[Advect Productions]]|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[Médecins Sans Frontières|Doctors Without Borders]]}}
+}}
+
+{{BundleEnd}}
+
+===2018===
+
+{{BundleStart}}
+{{BundleFirstRow|rowspan=9|Bundle='''January 2018 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/january_2018_monthly  ''Start up the year with a bundle of new games!''] at humblebundle.com</ref>|Period=December 2017
+|title=''[[Tomb Raider (2013 video game)|Tomb Raider]]''|Developer=[[Crystal Dynamics]]|Year=2013|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|title=''[[Sleeping Dogs (video game)|Sleeping Dogs: Definitive Edition]]''|Developer=[[United Front Games]]|Release=2012}}
+{{Bundle|title=''[[Quantum Break]]''|Developer=[[Remedy Entertainment]]|Release=2016}}
+{{Bundle|title=''[[The Long Dark]]''|Developer=[[Hinterland Studio]]|Release=2017}}
+{{Bundle|title=''[[Warhammer 40,000: Dawn of War III]]''|Developer=[[Relic Entertainment]]|Release=2017}}
+{{Bundle|title=''[[Hiveswap]]''|Developer=[[What Pumpkin Games]]|Release=2017}}
+{{Bundle|title=''[[Mr. Shifty]]''|Developer=[[Team Shifty]]|Release=2017}}
+{{Bundle|title=''[[Cursed Castilla (Maldita Castilla EX)]]''|Developer=Locomalito, Gryzor87|Release=2016}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[Charity: Water]]}}
+}}
+
+{{BundleFirstRow|rowspan=9|Bundle='''February 2018 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/february_2018_monthly  ''Here it is: your February 2018 Humble Monthly Bundle!''] at humblebundle.com</ref>|Period=January 2017
+|title=''[[Life Is Strange]]''|Developer=[[Dontnod Entertainment]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|title=''[[Tacoma (video game)|Tacoma]]''|Developer=[[Fullbright (company)|Fullbright]]|Release=2017}}
+{{Bundle|title=''[[Civilization VI]]''|Developer=[[Firaxis Games]]|Release=2016}}
+{{Bundle|title=''[[Owlboy]]''|Developer=[[D-Pad Studio]]|Release=2016}}
+{{Bundle|title=''[[Black the Fall]]''|Developer=[[Square Enix]]|Release=2017}}
+{{Bundle|title=''[[Snake Pass (video game)|Snake Pass]]''|Developer=[[Sumo Digital]]|Release=2017}}
+{{Bundle|title=''[[The Norwood Suite]]''|Developer=Cosmo D|Release=2017}}
+{{Bundle|title=''[[Fortune-499]]''|Developer=Humble Original|Release=2017}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: [[World Land Trust]]}}
+}}
+
+{{BundleEnd}}
