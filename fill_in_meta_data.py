@@ -128,3 +128,10 @@ if __name__ == '__main__':
 
     for game_name in game_names:
         (release_date, appID_try_count) = get_game_release_date(game_name, verbose)
+
+    # Manually check mismatches
+    for game_name in sorted(game_names):
+        if matched_meta_data_dict[game_name]['Levenshtein-distance'][0] > 0:
+            print('\n')
+            print(game_name)
+            print(matched_meta_data_dict[game_name]['matched-name'][0])
