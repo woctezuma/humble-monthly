@@ -77,16 +77,39 @@ def get_bundle_release_date(bundle_name):
     return release_date_as_datetime
 
 
-def get_game_release_date(appID):
+def get_game_release_date_with_appID(appID, verbose=False):
     try:
         release_date_as_datetime = get_release_date_as_datetime(appID)
     except ValueError:
         release_date_as_datetime = None
 
-        release_date = get_release_date_as_str(appID)
-        print('[Warning] No release date (' + release_date + ') could be found for appID=' + appID)
+        if verbose:
+            release_date = get_release_date_as_str(appID)
+            print('[Warning] No release date (' + release_date + ') could be found for appID=' + appID)
 
     return release_date_as_datetime
+
+
+def get_game_release_date(game_name, verbose=False):
+    meta_data = matched_meta_data_dict[game_name]['appID']
+
+    release_date = None
+    appID_try_count = 0
+
+    while (release_date is None) and (appID_try_count < len(meta_data)):
+        appID = meta_data[appID_try_count]
+
+        release_date = get_game_release_date_with_appID(appID, verbose)
+        appID_try_count += 1
+
+    if (appID_try_count > 1) and verbose:
+        print('\nA release date could be found with match#=' + str(appID_try_count))
+        print(matched_meta_data_dict[game_name])
+
+    if (release_date is None) and verbose:
+        print('No release date could be found for ' + game_name)
+
+    return (release_date, appID_try_count)
 
 
 if __name__ == '__main__':
@@ -95,20 +118,13 @@ if __name__ == '__main__':
 
     game_names = list_all_games(bundles)
 
-    print(game_names)
-
     num_closest_neighbors = 2
     matched_meta_data_dict = match_all_game_names_with_appID(game_names, num_closest_neighbors)
 
-    print(matched_meta_data_dict)
-
     for bundle_name in bundles.keys():
         release_date = get_bundle_release_date(bundle_name)
-        print(bundle_name)
-        print(release_date)
+
+    verbose = True
 
     for game_name in game_names:
-        for appID in matched_meta_data_dict[game_name]['appID']:
-            release_date = get_game_release_date(appID)
-            print(appID)
-            print(release_date)
+        (release_date, appID_try_count) = get_game_release_date(game_name, verbose)
