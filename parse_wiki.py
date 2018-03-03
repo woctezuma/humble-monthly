@@ -25,7 +25,7 @@ def parse_bundle_name(wiki_str):
     return bundle_name
 
 
-def parse_game_name(wiki_str):
+def parse_game_name(wiki_str, verbose=False):
     # Tokenize and strip
     wiki_tokens = [s.strip() for s in re.split('\|', wiki_str)]
 
@@ -51,7 +51,8 @@ def parse_game_name(wiki_str):
         # Remove any hyperlink
         hyperlink_tokens = re.split('\|', game_name)
         if len(hyperlink_tokens) > 1:
-            print(hyperlink_tokens)
+            if verbose:
+                print(hyperlink_tokens)
             game_name = hyperlink_tokens[-1]
 
         # Further strip the game name
