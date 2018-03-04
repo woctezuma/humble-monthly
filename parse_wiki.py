@@ -2,10 +2,8 @@ import re
 
 
 def load_wiki_file(filename):
-    relevant_prefix = '{{Bundle'
-
     with open(filename, encoding='utf8') as f:
-        lines = [l.strip() for l in f.readlines() if l.startswith(relevant_prefix)]
+        lines = [l.strip() for l in f.readlines()]
 
     return lines
 
@@ -67,12 +65,14 @@ def parse_game_name(wiki_str, verbose=False):
     return game_name
 
 
-def build_dictionary(filename):
+def build_dictionary(filename, verbose=False):
     bundles = dict()
     bundle_name = None
 
     bundle_entry_prefix = '{{BundleFirstRow'
     game_entry_prefix = '{{Bundle|'
+    game_single_entry_prefix_MTA = '|MTA='
+    game_single_entry_prefix_title = '|title='
 
     lines = load_wiki_file(filename)
 
@@ -86,10 +86,15 @@ def build_dictionary(filename):
             if game_name is not None:
                 bundles[bundle_name].append(game_name)
 
-        elif wiki_str.startswith(game_entry_prefix):
+        elif wiki_str.startswith(game_entry_prefix) \
+                or wiki_str.startswith(game_single_entry_prefix_MTA) \
+                or wiki_str.startswith(game_single_entry_prefix_title):
             game_name = parse_game_name(wiki_str)
             bundles[bundle_name].append(game_name)
+
         else:
+            if verbose:
+                print('Ignored line:\t' + wiki_str)
             continue
 
     return bundles
@@ -97,5 +102,6 @@ def build_dictionary(filename):
 
 if __name__ == '__main__':
     filename = 'data/wiki_humble_monthly.txt'
-    bundles = build_dictionary(filename)
+    verbose = True
+    bundles = build_dictionary(filename, verbose)
     print(bundles)
