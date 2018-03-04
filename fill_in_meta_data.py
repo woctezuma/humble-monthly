@@ -238,8 +238,40 @@ def display_matches(game_names, matched_meta_data_dict):
     return
 
 
-if __name__ == '__main__':
-    filename = 'data/wiki_humble_monthly.txt'
+def filter_dictionary_with_meta_data(bundles_raw_dict, matched_meta_data_dict, verbose=False):
+    # Filter a dictionary so that only games with a known release date are included
+
+    bundles_with_meta_data_dict = dict()
+
+    for bundle_name in bundles_raw_dict.keys():
+        release_date = get_bundle_release_date(bundle_name)
+
+        if release_date is not None:
+
+            monthly_bundle_id = datetime.datetime.strftime(release_date, '%Y-%m')
+
+            bundles_with_meta_data_dict[monthly_bundle_id] = dict()
+            bundles_with_meta_data_dict[monthly_bundle_id]['bundle-name'] = bundle_name
+            bundles_with_meta_data_dict[monthly_bundle_id]['release-date'] = release_date
+            bundles_with_meta_data_dict[monthly_bundle_id]['content'] = dict()
+
+            bundle_content = bundles_raw_dict[bundle_name]
+
+            for game_name in bundle_content:
+                (release_date, appID_try_count) = get_game_release_date(game_name, matched_meta_data_dict, verbose)
+
+                if release_date is not None:
+                    matched_name = matched_meta_data_dict[game_name]['matched-name'][0]
+                    appID = matched_meta_data_dict[game_name]['appID'][0]
+
+                    bundles_with_meta_data_dict[monthly_bundle_id]['content'][appID] = dict()
+                    bundles_with_meta_data_dict[monthly_bundle_id]['content'][appID]['game-name'] = matched_name
+                    bundles_with_meta_data_dict[monthly_bundle_id]['content'][appID]['release-date'] = release_date
+
+    return bundles_with_meta_data_dict
+
+
+def build_dictionary_with_metadata(filename, verbose=False):
     bundles = build_dictionary(filename)
 
     game_names = list_all_games(bundles)
@@ -247,13 +279,18 @@ if __name__ == '__main__':
     num_closest_neighbors = 1
     matched_meta_data_dict = match_all_game_names_with_appID(game_names, num_closest_neighbors)
 
-    verbose = True
     matched_meta_data_dict = fix_matched_meta_data_dict(matched_meta_data_dict, verbose)
 
-    for bundle_name in bundles.keys():
-        release_date = get_bundle_release_date(bundle_name)
+    if verbose:
+        display_matches(game_names, matched_meta_data_dict)
 
-    for game_name in game_names:
-        (release_date, appID_try_count) = get_game_release_date(game_name, matched_meta_data_dict, verbose)
+    bundles_with_meta_data = filter_dictionary_with_meta_data(bundles, matched_meta_data_dict, verbose)
 
-    display_matches(game_names, matched_meta_data_dict)
+    return bundles_with_meta_data
+
+
+if __name__ == '__main__':
+    filename = 'data/wiki_humble_monthly.txt'
+    verbose = True
+    bundles = build_dictionary_with_metadata(filename, verbose)
+    print(bundles)
