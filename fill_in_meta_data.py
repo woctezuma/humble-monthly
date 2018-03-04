@@ -251,4 +251,3 @@ if __name__ == '__main__':
         (release_date, appID_try_count) = get_game_release_date(game_name, matched_meta_data_dict, verbose)
 
     display_matches(game_names, matched_meta_data_dict)
-  
