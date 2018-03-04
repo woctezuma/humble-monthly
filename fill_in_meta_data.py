@@ -1,5 +1,7 @@
 import datetime
 
+import Levenshtein as lv
+
 from download_json import getTodaysSteamSpyData
 from parse_wiki import build_dictionary
 from steamspy_utils import compute_all_name_distances, get_release_date_as_datetime, get_release_date_as_str
@@ -91,7 +93,10 @@ def get_game_release_date_with_appID(appID, verbose=False):
 
 
 def get_game_release_date(game_name, matched_meta_data_dict, verbose=False):
-    meta_data = matched_meta_data_dict[game_name]['appID']
+    try:
+        meta_data = matched_meta_data_dict[game_name]['appID']
+    except KeyError:
+        meta_data = []
 
     release_date = None
     appID_try_count = 0
@@ -112,29 +117,13 @@ def get_game_release_date(game_name, matched_meta_data_dict, verbose=False):
     return (release_date, appID_try_count)
 
 
-if __name__ == '__main__':
-    filename = 'data/wiki_humble_monthly.txt'
-    bundles = build_dictionary(filename)
+def check_if_incorrect_match(game_name, matched_meta_data_dict):
+    # Return a boolean which is False if at least one of the following conditions is satisfied:
+    # - the Levenshtein distance for game_name is zero,
+    # - game_name is among the correct matches (manually detected) which have a positive Levenshtein distance.
 
-    game_names = list_all_games(bundles)
+    has_zero_levenshtein_distance = bool(matched_meta_data_dict[game_name]['Levenshtein-distance'][0] == 0)
 
-    num_closest_neighbors = 1
-    matched_meta_data_dict = match_all_game_names_with_appID(game_names, num_closest_neighbors)
-
-    for bundle_name in bundles.keys():
-        release_date = get_bundle_release_date(bundle_name)
-
-    verbose = True
-
-    for game_name in game_names:
-        (release_date, appID_try_count) = get_game_release_date(game_name, matched_meta_data_dict, verbose)
-
-    # Manually check mismatches
-    for game_name in sorted(game_names):
-        if matched_meta_data_dict[game_name]['Levenshtein-distance'][0] > 0:
-            print('\'' + game_name + '\'\t:\t\'' + matched_meta_data_dict[game_name]['matched-name'][0] + '\',')
-
-    # Manually fix mismatches
     hard_coded_matches = {
         # Correct matches
         'ABZÛ': 'ABZU',
@@ -149,6 +138,22 @@ if __name__ == '__main__':
         'One Piece: Pirate Warriors 3': 'One Piece Pirate Warriors 3',
         'Sentinels of the Multiverse The Video Game': 'Sentinels of the Multiverse',
         'The Uncertain - Episode 1: The Last Quiet Day': 'The Uncertain: Episode 1 - The Last Quiet Day',
+    }
+
+    is_manually_detected_correct_match_with_positive_levenshtein_distance = bool(game_name in hard_coded_matches.keys())
+
+    is_correct_match = has_zero_levenshtein_distance or is_manually_detected_correct_match_with_positive_levenshtein_distance
+
+    is_incorrect_match = not (is_correct_match)
+
+    return is_incorrect_match
+
+
+def fix_incorrect_match(game_name):
+    # Return the fixed appID if the game name is among the incorrect matches (manually detected)
+    # Otherwise, return None.
+
+    hard_coded_matches = {
         # Fixes for mismatches
         'Brigador': '274500',
         'Civilization VI': '289070',
@@ -170,3 +175,80 @@ if __name__ == '__main__':
         'The Elder Scrolls Online': '306130',
         'Uurnog': '678850',
     }
+
+    try:
+        fixed_appID = hard_coded_matches[game_name]
+    except KeyError:
+        fixed_appID = None
+
+    return fixed_appID
+
+
+def fix_matched_meta_data_dict(matched_meta_data_dict, verbose=False):
+    # Manually fix mismatches
+
+    steamspy_database = getTodaysSteamSpyData()
+
+    all_game_names = list(matched_meta_data_dict.keys())
+
+    for game_name in all_game_names:
+        if check_if_incorrect_match(game_name, matched_meta_data_dict):
+            fixed_appID = fix_incorrect_match(game_name)
+            if fixed_appID is not None:
+                # Fix incorrect match
+                fixed_matched_name = steamspy_database[fixed_appID]['name']
+                fixed_distance = lv.distance(game_name.lower(), fixed_matched_name.lower())
+
+                matched_meta_data_dict[game_name]['matched-name'] = [fixed_matched_name]
+                matched_meta_data_dict[game_name]['appID'] = [fixed_appID]
+                matched_meta_data_dict[game_name]['Levenshtein-distance'] = [fixed_distance]
+            else:
+                # Delete incorrect match
+                if verbose:
+                    print('\nDeleting entry for ' + game_name)
+                    print(matched_meta_data_dict[game_name])
+
+                del matched_meta_data_dict[game_name]
+
+    return matched_meta_data_dict
+
+
+def display_matches(game_names, matched_meta_data_dict):
+    # Display every match (useful to manually check and fix mismatches)
+
+    for game_name in sorted(game_names):
+        try:
+            distance = matched_meta_data_dict[game_name]['Levenshtein-distance'][0]
+            if distance > 0:
+                # Possible mismatch. Make sure this is actually a good match despite positive distance. Otherwise, fix it.
+                print('>0\t\'' + game_name + '\'\t:\t\'' + matched_meta_data_dict[game_name]['matched-name'][0] + '\',')
+            else:
+                # Perfect match.
+                print('==\t\'' + game_name + '\'\t:\t\'' + matched_meta_data_dict[game_name]['matched-name'][0] + '\',')
+        except KeyError:
+            # Unfixable Mismatch. This should be either a game not on Steam, or no Steam key was provided to Humble Monthly subscribers.
+            print('!=\t\'' + game_name + '\'\t:\t\'' + '\',')
+
+    return
+
+
+if __name__ == '__main__':
+    filename = 'data/wiki_humble_monthly.txt'
+    bundles = build_dictionary(filename)
+
+    game_names = list_all_games(bundles)
+
+    num_closest_neighbors = 1
+    matched_meta_data_dict = match_all_game_names_with_appID(game_names, num_closest_neighbors)
+
+    verbose = True
+    matched_meta_data_dict = fix_matched_meta_data_dict(matched_meta_data_dict, verbose)
+
+    for bundle_name in bundles.keys():
+        release_date = get_bundle_release_date(bundle_name)
+
+    for game_name in game_names:
+        (release_date, appID_try_count) = get_game_release_date(game_name, matched_meta_data_dict, verbose)
+
+    display_matches(game_names, matched_meta_data_dict)
+  
