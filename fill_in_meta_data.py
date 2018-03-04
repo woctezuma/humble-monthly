@@ -118,7 +118,7 @@ if __name__ == '__main__':
 
     game_names = list_all_games(bundles)
 
-    num_closest_neighbors = 2
+    num_closest_neighbors = 1
     matched_meta_data_dict = match_all_game_names_with_appID(game_names, num_closest_neighbors)
 
     for bundle_name in bundles.keys():
