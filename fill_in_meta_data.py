@@ -90,7 +90,7 @@ def get_game_release_date_with_appID(appID, verbose=False):
     return release_date_as_datetime
 
 
-def get_game_release_date(game_name, verbose=False):
+def get_game_release_date(game_name, matched_meta_data_dict, verbose=False):
     meta_data = matched_meta_data_dict[game_name]['appID']
 
     release_date = None
@@ -127,7 +127,7 @@ if __name__ == '__main__':
     verbose = True
 
     for game_name in game_names:
-        (release_date, appID_try_count) = get_game_release_date(game_name, verbose)
+        (release_date, appID_try_count) = get_game_release_date(game_name, matched_meta_data_dict, verbose)
 
     # Manually check mismatches
     for game_name in sorted(game_names):
