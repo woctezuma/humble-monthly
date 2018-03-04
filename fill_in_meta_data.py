@@ -137,7 +137,6 @@ def check_if_incorrect_match(game_name, matched_meta_data_dict):
         'Nongünz': 'Nongnz',
         'One Piece: Pirate Warriors 3': 'One Piece Pirate Warriors 3',
         'Sentinels of the Multiverse The Video Game': 'Sentinels of the Multiverse',
-        'The Uncertain - Episode 1: The Last Quiet Day': 'The Uncertain: Episode 1 - The Last Quiet Day',
     }
 
     is_manually_detected_correct_match_with_positive_levenshtein_distance = bool(game_name in hard_coded_matches.keys())
@@ -164,14 +163,12 @@ def fix_incorrect_match(game_name):
         'NEON STRUCT: Die Augen der Welt': '310740',
         'Okhlos': '400180',
         'Orwell': '491950',
-        'Payday 2 (+ DLCs)': '218620',
         'Pillars of Eternity - Hero Edition': '291650',
         'RIVE': '278100',
         'Renowned Explorers': '296970',
         'Shoppe Keep Deluxe Edition': '381120',
         'Stikbold!': '429330',
         'Strafe': '442780',
-        'Tailwind Prologue': '674800',
         'The Elder Scrolls Online': '306130',
         'Uurnog': '678850',
     }
