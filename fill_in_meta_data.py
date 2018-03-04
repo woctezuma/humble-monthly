@@ -137,6 +137,11 @@ def check_if_incorrect_match(game_name, matched_meta_data_dict):
         'Nongünz': 'Nongnz',
         'One Piece: Pirate Warriors 3': 'One Piece Pirate Warriors 3',
         'Sentinels of the Multiverse The Video Game': 'Sentinels of the Multiverse',
+        'Alien Isolation': 'Alien: Isolation',
+        'Wasteland 2: Directors Cut': 'Wasteland 2: Director\'s Cut',
+        'God Eater 2: Rage Burst': 'GOD EATER 2 Rage Burst',
+        'God Eater: Resurrection': 'GOD EATER RESURRECTION',
+        'Holy Potatoes! We’re in Space?!': 'Holy Potatoes! Were in Space?!',
     }
 
     is_manually_detected_correct_match_with_positive_levenshtein_distance = bool(game_name in hard_coded_matches.keys())
@@ -171,6 +176,10 @@ def fix_incorrect_match(game_name):
         'Strafe': '442780',
         'The Elder Scrolls Online': '306130',
         'Uurnog': '678850',
+        'Call of Duty: Black Ops III Multiplayer Starter Pack': '311210',
+        'Dragon\'s Dogma': '367500',
+        'Resident Evil 5 Gold Edition': '21690',
+        'Life Is Strange': '319630',
     }
 
     try:
