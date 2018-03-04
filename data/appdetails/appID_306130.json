@@ -1,0 +1,343 @@
+{
+  "306130": {
+    "success": true,
+    "data": {
+      "type": "game",
+      "name": "The Elder Scrolls\u00ae Online: Tamriel Unlimited\u2122",
+      "steam_appid": 306130,
+      "required_age": "18",
+      "is_free": false,
+      "dlc": [
+        582880,
+        592670
+      ],
+      "detailed_description": "The award-winning fantasy role-playing series, The Elder Scrolls goes online \u2013 no game subscription required. Experience this multiplayer role-playing game on your own or together with your friends, guild mates, and thousands of alliance members.  Explore dangerous caves and dungeons in Skyrim, or craft quality goods to sell in the city of Daggerfall.  Embark upon adventurous quests across Tamriel and engage in massive player versus player battles, or spend your days at the nearest fishing hole or reading one of many books of lore.  The choices are yours in the persistent world of The Elder Scrolls Online: Tamriel Unlimited.<h2 class=\"bb_tag\"> Key Features:</h2><ul class=\"bb_ul\"><li><strong>NO SUBSCRIPTION REQUIRED</strong><br>Purchase the game and enjoy your adventures without a monthly fee.<br><br></li><li><strong>THE FIGHT FOR TAMRIEL BEGINS!</strong><br>Three alliances vie for control of the Empire. As these powers battle for supremacy, darker forces move to destroy the world.<br><br></li><li><strong>PLAY THE WAY YOU LIKE </strong><br>Battle, craft, fish, steal, siege, or explore. The choice is yours to make in a persistent Elder Scrolls world.<br><br></li><li><strong>A MULTIPLAYER RPG </strong><br>Adventure alone, quest with friends, or join an army of thousands in epic PVP battles.<br><br></li><li><strong>TELL YOUR OWN STORY </strong><br>Discover the secrets of Tamriel as you quest to regain your lost soul and save the world from Oblivion.</li></ul>",
+      "about_the_game": "The award-winning fantasy role-playing series, The Elder Scrolls goes online \u2013 no game subscription required. Experience this multiplayer role-playing game on your own or together with your friends, guild mates, and thousands of alliance members.  Explore dangerous caves and dungeons in Skyrim, or craft quality goods to sell in the city of Daggerfall.  Embark upon adventurous quests across Tamriel and engage in massive player versus player battles, or spend your days at the nearest fishing hole or reading one of many books of lore.  The choices are yours in the persistent world of The Elder Scrolls Online: Tamriel Unlimited.<h2 class=\"bb_tag\"> Key Features:</h2><ul class=\"bb_ul\"><li><strong>NO SUBSCRIPTION REQUIRED</strong><br>Purchase the game and enjoy your adventures without a monthly fee.<br><br></li><li><strong>THE FIGHT FOR TAMRIEL BEGINS!</strong><br>Three alliances vie for control of the Empire. As these powers battle for supremacy, darker forces move to destroy the world.<br><br></li><li><strong>PLAY THE WAY YOU LIKE </strong><br>Battle, craft, fish, steal, siege, or explore. The choice is yours to make in a persistent Elder Scrolls world.<br><br></li><li><strong>A MULTIPLAYER RPG </strong><br>Adventure alone, quest with friends, or join an army of thousands in epic PVP battles.<br><br></li><li><strong>TELL YOUR OWN STORY </strong><br>Discover the secrets of Tamriel as you quest to regain your lost soul and save the world from Oblivion.</li></ul>",
+      "short_description": "The Elder Scrolls\u00ae Online: Tamriel Unlimited\u2122, the latest chapter of the award-winning series, brings the legendary experience online for the first time. Explore the vast world with friends or embark upon the adventure alone - the choices you will make will shape your destiny. No game subscription required.",
+      "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong><br><strong>*</strong>languages with full audio support",
+      "header_image": "http://cdn.akamai.steamstatic.com/steam/apps/306130/header.jpg?t=1518719513",
+      "website": "http://www.elderscrollsonline.com",
+      "pc_requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 64-bit<br></li><li><strong>Processor:</strong> Intel\u00ae Core i3 540 or AMD A6-3620 or higher<br></li><li><strong>Memory:</strong> 3 GB RAM<br></li><li><strong>Graphics:</strong> Direct X 11.0 compliant video card with 1GB RAM (NVidia GeForce 460 or AMD Radeon 6850)<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 85 GB available space<br></li><li><strong>Sound Card:</strong> DirectX compatible sound card</li></ul>",
+        "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 64-bit<br></li><li><strong>Processor:</strong> Intel\u00ae Core i5 2300 or AMD FX4350<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Direct X 11.0 compliant video card with 2GB RAM (NVIDIA\u00ae GeForce\u00ae GTX 750 or AMD Radeon\u2122 HD 7850) or higher<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 85 GB available space<br></li><li><strong>Sound Card:</strong> DirectX compatible sound card</li></ul>"
+      },
+      "mac_requirements": {
+        "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> OS X 10.9<br></li><li><strong>Processor:</strong> Intel Core 2 Duo processor<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVidia GeForce 460 or AMD Radeon 6850 (1GB of VRAM)<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 85 GB available space<br></li><li><strong>Additional Notes:</strong> OpenGL: 4.1</li></ul>",
+        "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> OS X 10.9 or Later<br></li><li><strong>Processor:</strong> Intel i5 processor<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> NVidia GeForce 640 or AMD Radeon 5670 (1GB of VRAM)<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 85 GB available space<br></li><li><strong>Additional Notes:</strong> OpenGL: 4.1</li></ul>"
+      },
+      "linux_requirements": [],
+      "legal_notice": "\u00a92015 ZeniMax Media Inc. The Elder Scrolls\u00ae Online: Tamriel Unlimited\u2122 developed by ZeniMax Online Studios LLC, a ZeniMax Media company. ZeniMax, The Elder Scrolls, ESO, ESO Plus, Tamriel Unlimited, Bethesda, Bethesda Softworks and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the US and/or other countries. All Rights Reserved.",
+      "ext_user_account_notice": "Elder Scrolls Online Account (Supports Linking to Steam Account)",
+      "developers": [
+        "Zenimax Online Studios"
+      ],
+      "publishers": [
+        "Bethesda Softworks"
+      ],
+      "price_overview": {
+        "currency": "EUR",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0
+      },
+      "packages": [
+        164609,
+        164610,
+        "131841",
+        131842,
+        "131843",
+        "131844",
+        130311,
+        131853,
+        131854,
+        "182950",
+        "183027"
+      ],
+      "package_groups": [
+        {
+          "name": "default",
+          "title": "Buy The Elder Scrolls\u00ae Online: Tamriel Unlimited\u2122",
+          "description": "",
+          "selection_text": "Select a purchase option",
+          "save_text": "",
+          "display_type": 0,
+          "is_recurring_subscription": "false",
+          "subs": [
+            {
+              "packageid": 164609,
+              "percent_savings_text": "",
+              "percent_savings": 0,
+              "option_text": "The Elder Scrolls Online - Morrowind - 29,99\u20ac",
+              "option_description": "",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 2999
+            },
+            {
+              "packageid": 164610,
+              "percent_savings_text": "",
+              "percent_savings": 0,
+              "option_text": "The Elder Scrolls Online - Morrowind - Digital Collector's Edition - 39,99\u20ac",
+              "option_description": "",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 3999
+            }
+          ]
+        },
+        {
+          "name": "CrownPakcs",
+          "title": "Buy Crowns",
+          "description": "Click <a href=\"http://store.steampowered.com/app/539001/\" target=\"_blank\" rel=\"noreferrer\"  >HERE</a></a> for more information.",
+          "selection_text": "Select a purchase option",
+          "save_text": "",
+          "display_type": "1",
+          "is_recurring_subscription": "false",
+          "subs": [
+            {
+              "packageid": "131841",
+              "percent_savings_text": "",
+              "percent_savings": 0,
+              "option_text": "The Elder Scrolls Online - 750 Crown Pack - 6,99\u20ac",
+              "option_description": "Click <a href=\"http://store.steampowered.com/app/539001/\" target=\"_blank\" rel=\"noreferrer\"  >HERE</a></a> for more information.",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 699
+            },
+            {
+              "packageid": 131842,
+              "percent_savings_text": "",
+              "percent_savings": 0,
+              "option_text": "The Elder Scrolls Online - 1500 Crown Pack - 12,99\u20ac",
+              "option_description": "Click <a href=\"http://store.steampowered.com/app/539001/\" target=\"_blank\" rel=\"noreferrer\"  >HERE</a></a> for more information.",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 1299
+            },
+            {
+              "packageid": "131843",
+              "percent_savings_text": "",
+              "percent_savings": 0,
+              "option_text": "The Elder Scrolls Online - 3000 Crown Pack - 20,99\u20ac",
+              "option_description": "Click <a href=\"http://store.steampowered.com/app/539001/\" target=\"_blank\" rel=\"noreferrer\"  >HERE</a></a> for more information.",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 2099
+            },
+            {
+              "packageid": "131844",
+              "percent_savings_text": "",
+              "percent_savings": 0,
+              "option_text": "The Elder Scrolls Online - 5500 Crown Pack - 34,99\u20ac",
+              "option_description": "Click <a href=\"http://store.steampowered.com/app/539001/\" target=\"_blank\" rel=\"noreferrer\"  >HERE</a></a> for more information.",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 3499
+            },
+            {
+              "packageid": "182950",
+              "percent_savings_text": "",
+              "percent_savings": 0,
+              "option_text": "The Elder Scrolls Online - 14000 Crown Pack - 84,99\u20ac",
+              "option_description": "Click <a href=\"http://store.steampowered.com/app/539001/\" target=\"_blank\" rel=\"noreferrer\"  >HERE</a></a> for more information.",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 8499
+            },
+            {
+              "packageid": "183027",
+              "percent_savings_text": "",
+              "percent_savings": 0,
+              "option_text": "The Elder Scrolls Online - 21000 Crown Pack - 124,99\u20ac",
+              "option_description": "Click <a href=\"http://store.steampowered.com/app/539001/\" target=\"_blank\" rel=\"noreferrer\"  >HERE</a></a> for more information.",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 12499
+            }
+          ]
+        },
+        {
+          "name": "subscriptions",
+          "title": "Subscribe to a Plus Membership",
+          "description": "Click <a href=\"http://store.steampowered.com/app/535880/\" target=\"_blank\" rel=\"noreferrer\"  >HERE</a></a> for more information.",
+          "selection_text": "Select a subscription plan",
+          "save_text": "Save up to 15%",
+          "display_type": "1",
+          "is_recurring_subscription": "true",
+          "subs": [
+            {
+              "packageid": 130311,
+              "percent_savings_text": "",
+              "percent_savings": 0,
+              "option_text": "1 Month(s) @ 12,99\u20ac/Month",
+              "option_description": "<p class=\"game_purchase_subscription\">12,99\u20ac at checkout, auto-renewed every 1 month(s) at 12,99\u20ac.</p>",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 1299
+            },
+            {
+              "packageid": 131853,
+              "percent_savings_text": "-8%",
+              "percent_savings": 8,
+              "option_text": "3 Month(s) @ 11,99\u20ac/Month",
+              "option_description": "<p class=\"game_purchase_subscription\">35,97\u20ac at checkout, auto-renewed every 3 month(s) at 35,97\u20ac.</p>",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 3597
+            },
+            {
+              "packageid": 131854,
+              "percent_savings_text": "-15%",
+              "percent_savings": 15,
+              "option_text": "6 Month(s) @ 10,99\u20ac/Month",
+              "option_description": "<p class=\"game_purchase_subscription\">65,94\u20ac at checkout, auto-renewed every 6 month(s) at 65,94\u20ac.</p>",
+              "can_get_free_license": "0",
+              "is_free_license": false,
+              "price_in_cents_with_discount": 6594
+            }
+          ]
+        }
+      ],
+      "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+      },
+      "categories": [
+        {
+          "id": 20,
+          "description": "MMO"
+        },
+        {
+          "id": 29,
+          "description": "Steam Trading Cards"
+        },
+        {
+          "id": 18,
+          "description": "Partial Controller Support"
+        }
+      ],
+      "genres": [
+        {
+          "id": "29",
+          "description": "Massively Multiplayer"
+        },
+        {
+          "id": "3",
+          "description": "RPG"
+        }
+      ],
+      "screenshots": [
+        {
+          "id": 0,
+          "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_6ce59dcaa51a89208c643301f6e220d75c001b97.600x338.jpg?t=1518719513",
+          "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_6ce59dcaa51a89208c643301f6e220d75c001b97.1920x1080.jpg?t=1518719513"
+        },
+        {
+          "id": 1,
+          "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_c1cdae9879550709486774eed3a2760d18955349.600x338.jpg?t=1518719513",
+          "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_c1cdae9879550709486774eed3a2760d18955349.1920x1080.jpg?t=1518719513"
+        },
+        {
+          "id": 2,
+          "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_16688139333e39593af0eccc77342165eacae0d0.600x338.jpg?t=1518719513",
+          "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_16688139333e39593af0eccc77342165eacae0d0.1920x1080.jpg?t=1518719513"
+        },
+        {
+          "id": 3,
+          "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_da66e194128088e46a5ecad2af455ae2ebe84be0.600x338.jpg?t=1518719513",
+          "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_da66e194128088e46a5ecad2af455ae2ebe84be0.1920x1080.jpg?t=1518719513"
+        },
+        {
+          "id": 4,
+          "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_5e0c14f9b39283bafbcd37fb33a1c79a87757154.600x338.jpg?t=1518719513",
+          "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_5e0c14f9b39283bafbcd37fb33a1c79a87757154.1920x1080.jpg?t=1518719513"
+        },
+        {
+          "id": 5,
+          "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_48be777780be9babf0ffb6c77766d5b0776adc1f.600x338.jpg?t=1518719513",
+          "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_48be777780be9babf0ffb6c77766d5b0776adc1f.1920x1080.jpg?t=1518719513"
+        },
+        {
+          "id": 6,
+          "path_thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_c839c16d7d8a1488467396ec3854bb405afbc835.600x338.jpg?t=1518719513",
+          "path_full": "http://cdn.akamai.steamstatic.com/steam/apps/306130/ss_c839c16d7d8a1488467396ec3854bb405afbc835.1920x1080.jpg?t=1518719513"
+        }
+      ],
+      "movies": [
+        {
+          "id": 2037896,
+          "name": "The Elder Scrolls Online: Tamriel Unlimited",
+          "thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/2037896/movie.293x165.jpg?t=1447371066",
+          "webm": {
+            "480": "http://cdn.akamai.steamstatic.com/steam/apps/2037896/movie480.webm?t=1447371066",
+            "max": "http://cdn.akamai.steamstatic.com/steam/apps/2037896/movie_max.webm?t=1447371066"
+          },
+          "highlight": true
+        },
+        {
+          "id": 256675687,
+          "name": "Game Awards 2016 Trailer",
+          "thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/256675687/movie.293x165.jpg?t=1480714107",
+          "webm": {
+            "480": "http://cdn.akamai.steamstatic.com/steam/apps/256675687/movie480.webm?t=1480714107",
+            "max": "http://cdn.akamai.steamstatic.com/steam/apps/256675687/movie_max.webm?t=1480714107"
+          },
+          "highlight": true
+        },
+        {
+          "id": 2032971,
+          "name": "The Elder Scrolls Online E3 2014 Trailer",
+          "thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/2032971/movie.293x165.jpg?t=1447362385",
+          "webm": {
+            "480": "http://cdn.akamai.steamstatic.com/steam/apps/2032971/movie480.webm?t=1447362385",
+            "max": "http://cdn.akamai.steamstatic.com/steam/apps/2032971/movie_max.webm?t=1447362385"
+          },
+          "highlight": false
+        },
+        {
+          "id": 2033292,
+          "name": "The Alliances",
+          "thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/2033292/movie.293x165.jpg?t=1447362612",
+          "webm": {
+            "480": "http://cdn.akamai.steamstatic.com/steam/apps/2033292/movie480.webm?t=1447362612",
+            "max": "http://cdn.akamai.steamstatic.com/steam/apps/2033292/movie_max.webm?t=1447362612"
+          },
+          "highlight": false
+        },
+        {
+          "id": 2033290,
+          "name": "The Arrival",
+          "thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/2033290/movie.293x165.jpg?t=1447362609",
+          "webm": {
+            "480": "http://cdn.akamai.steamstatic.com/steam/apps/2033290/movie480.webm?t=1447362609",
+            "max": "http://cdn.akamai.steamstatic.com/steam/apps/2033290/movie_max.webm?t=1447362609"
+          },
+          "highlight": false
+        },
+        {
+          "id": 2033261,
+          "name": "The Siege",
+          "thumbnail": "http://cdn.akamai.steamstatic.com/steam/apps/2033261/movie.293x165.jpg?t=1447362581",
+          "webm": {
+            "480": "http://cdn.akamai.steamstatic.com/steam/apps/2033261/movie480.webm?t=1447362581",
+            "max": "http://cdn.akamai.steamstatic.com/steam/apps/2033261/movie_max.webm?t=1447362581"
+          },
+          "highlight": false
+        }
+      ],
+      "recommendations": {
+        "total": 30527
+      },
+      "release_date": {
+        "coming_soon": false,
+        "date": "22 May, 2017"
+      },
+      "support_info": {
+        "url": "https://help.elderscrollsonline.com/",
+        "email": ""
+      },
+      "background": "http://cdn.akamai.steamstatic.com/steam/apps/306130/page_bg_generated_v6b.jpg?t=1518719513"
+    }
+  }
+}
