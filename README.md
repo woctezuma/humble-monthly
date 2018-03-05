@@ -6,6 +6,10 @@ This repository contains code to analyze the content of past Humble Monthly Bund
 
 Data is included along the code in this repository, as downloaded on March 3, 2018.
 
+## Usage ##
+
+Install Python 3 and the project [`requirements`](requirements.txt). Run [`plot_time_series.py`](plot_time_series.py).
+
 ## Plots ##
 
 Plots can be found in the folder [`plots/`](plots/).
