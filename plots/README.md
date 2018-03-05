@@ -1,5 +1,7 @@
 # Plots
 
+**Caveat**: whenever a plot shows shaded areas, the data is averaged for each Humble Monthly bundle, and the plot shows the mean (dotted line) and the 95%-confidence interval (shaded area). For instance, the plot with respect to `price` does not show the total price (the sum of Manufacturer's Suggested Retail Prices) but the average price of the Steam games included in each Humble Monthly Bundle.   
+
 ## Features based on Wikipedia
 
 The following feature is computed with [Wikipedia](https://en.wikipedia.org/wiki/List_of_Humble_Bundles#Humble_Monthly_Bundles):
