@@ -1,3 +1,5 @@
+import pathlib
+
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import numpy as np
@@ -139,7 +141,7 @@ def display_demo():
     return
 
 
-def plot_time_series(x_list, feature_str, x_tick_as_dates=None, color='b'):
+def plot_time_series(x_list, feature_str, x_tick_as_dates=None, save_to_file=False, color='b'):
     x_vec = np.array([np.array(xi) for xi in x_list])
 
     mean = np.array([np.mean(xi) for xi in x_vec])
@@ -154,12 +156,12 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, color='b'):
         ub = None
         lb = None
 
-    fig = plt.figure(1, figsize=(7, 2.5))
+    fig, ax = plt.subplots()
     dotted_color = color + '--'
 
     if sig is not None:
         plot_mean_and_CI(mean, ub, lb, x_tick_as_dates, color_mean=dotted_color, color_shading=color)
-        plt.title('Mean and confidence interval plot of ' + feature_str.lower())
+        plt.title('Mean and 95%-confidence interval plot')
     else:
         plt.plot(x_tick_as_dates, mean, color)
         plt.title('Plot of ' + feature_str.lower())
@@ -167,9 +169,24 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, color='b'):
     plt.ylabel(feature_str)
     plt.xlabel('Timeline since the first Humble Monthly bundle was released')
 
+    import matplotlib.dates as mdates
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%b\n%Y'))
+
     plt.tight_layout()
     plt.grid()
-    plt.show()
+
+    if save_to_file:
+        formatted_filename = feature_str.lower().replace(' ', '_').replace('(', '_').replace(')', '_')
+        file_extension = '.png'
+
+        output_folder = 'plots/'
+        pathlib.Path(output_folder).mkdir(parents=True, exist_ok=True)
+        output_filename = output_folder + formatted_filename + file_extension
+
+        fig.savefig(output_filename, bbox_inches='tight')
+        plt.close(fig)
+    else:
+        plt.show()
 
     return
 
@@ -193,13 +210,19 @@ if __name__ == '__main__':
 
     steamspy_database = getTodaysSteamSpyData()
 
+    # Display options
+
+    save_to_file = True
+
+    x_tick_as_dates = time_series_bundle_release_date
+
     # Display the number of Steam games per monthly bundle
 
     feature_str = 'Number of Steam games'
 
     x_list = [len(bundle_content) for bundle_content in time_series_bundle_content_appIDs]
 
-    plot_time_series(x_list, feature_str, time_series_bundle_release_date)
+    plot_time_series(x_list, feature_str, x_tick_as_dates, save_to_file)
 
     # Display the number of reviews
 
@@ -208,17 +231,17 @@ if __name__ == '__main__':
     x_list = [[(steamspy_database[appID]['positive'] + steamspy_database[appID]['negative'])
                for appID in bundle_content] for bundle_content in time_series_bundle_content_appIDs]
 
-    plot_time_series(x_list, feature_str, time_series_bundle_release_date)
+    plot_time_series(x_list, feature_str, x_tick_as_dates, save_to_file)
 
     # Display the time between game release dates and bundle release date
 
-    feature_str = 'Time between game and bundle releases (in years)'
+    feature_str = 'Time to bundle (in years)'
 
     x_list = [[(bundle_date - game_date).days / 365.25
                for game_date in content_dates] for (bundle_date, content_dates) in
               zip(time_series_bundle_release_date, time_series_bundle_content_release_dates)]
 
-    plot_time_series(x_list, feature_str, time_series_bundle_release_date)
+    plot_time_series(x_list, feature_str, x_tick_as_dates, save_to_file)
 
     # Additional displays
 
@@ -233,4 +256,4 @@ if __name__ == '__main__':
         x_list = [[int(steamspy_database[appID][feature_str])
                    for appID in bundle_content] for bundle_content in time_series_bundle_content_appIDs]
 
-        plot_time_series(x_list, feature_str, time_series_bundle_release_date)
+        plot_time_series(x_list, feature_str, x_tick_as_dates, save_to_file)
