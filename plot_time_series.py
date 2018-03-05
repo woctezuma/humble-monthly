@@ -161,7 +161,7 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, save_to_file=Fal
 
     if sig is not None:
         plot_mean_and_CI(mean, ub, lb, x_tick_as_dates, color_mean=dotted_color, color_shading=color)
-        plt.title('Mean and 95%-confidence interval plot')
+        plt.title(feature_str + ', with 95% confidence')
     else:
         plt.plot(x_tick_as_dates, mean, color)
         plt.title('Plot of ' + feature_str.lower())
