@@ -263,7 +263,7 @@
 {{BundleFirstRow|rowspan=10|Bundle='''July 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/july_2017_monthly  ''This was the July 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=June 2017
 |MTA=|title=''[[Galactic Civilizations III]]''|Developer=[[Stardock]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|MTA=|title=''[[Hyper Light Drifter]]''|Developer=[[Heart Machine]]|Release=2016}}
-{{Bundle|MTA=|title=''[[Dark Souls II]]''|Developer=''[[FromSoftware]]'' | Release=2014 }}
+{{Bundle|MTA=|title=''[[Dark Souls II]]: Scholar of the First Sin''|Developer=''[[FromSoftware]]'' | Release=2014 }}
 {{Bundle|MTA=|title=''[[Armello]]''|Developer=League of Geeks| Release=2015}}
 {{Bundle|MTA=|title=''[[SimplePlanes]]''|Developer=[[Jundroo LLC]] |Release=2015}}
 {{Bundle|MTA=|title=''[[Sherlock Holmes: The Devil's Daughter]]''|Developer=[[Frogwares]]|Release=2016}}
