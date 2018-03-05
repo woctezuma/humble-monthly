@@ -141,7 +141,7 @@ def display_demo():
     return
 
 
-def plot_time_series(x_list, feature_str, x_tick_as_dates=None, save_to_file=False, color='b'):
+def plot_time_series(x_list, feature_str, x_tick_as_dates=None, output_folder=None, color='b'):
     x_vec = np.array([np.array(xi) for xi in x_list])
 
     mean = np.array([np.mean(xi) for xi in x_vec])
@@ -175,11 +175,10 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, save_to_file=Fal
     plt.tight_layout()
     plt.grid()
 
-    if save_to_file:
+    if output_folder is not None:
         formatted_filename = feature_str.lower().replace(' ', '_').replace('(', '_').replace(')', '_')
         file_extension = '.png'
 
-        output_folder = 'plots/'
         pathlib.Path(output_folder).mkdir(parents=True, exist_ok=True)
         output_filename = output_folder + formatted_filename + file_extension
 
@@ -194,7 +193,7 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, save_to_file=Fal
 def display_all_data(time_series_bundle_release_date,
                      time_series_bundle_content_release_dates,
                      time_series_bundle_content_appIDs,
-                     save_to_file=False):
+                     output_folder=None):
     # Objective: display prepared data
 
     steamspy_database = getTodaysSteamSpyData()
@@ -209,7 +208,7 @@ def display_all_data(time_series_bundle_release_date,
 
     x_list = [len(bundle_content) for bundle_content in time_series_bundle_content_appIDs]
 
-    plot_time_series(x_list, feature_str, x_tick_as_dates, save_to_file)
+    plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
     # Display the number of reviews
 
@@ -218,7 +217,7 @@ def display_all_data(time_series_bundle_release_date,
     x_list = [[(steamspy_database[appID]['positive'] + steamspy_database[appID]['negative'])
                for appID in bundle_content] for bundle_content in time_series_bundle_content_appIDs]
 
-    plot_time_series(x_list, feature_str, x_tick_as_dates, save_to_file)
+    plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
     # Display the time between game release dates and bundle release date
 
@@ -228,7 +227,7 @@ def display_all_data(time_series_bundle_release_date,
                for game_date in content_dates] for (bundle_date, content_dates) in
               zip(time_series_bundle_release_date, time_series_bundle_content_release_dates)]
 
-    plot_time_series(x_list, feature_str, x_tick_as_dates, save_to_file)
+    plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
     # Additional displays
 
@@ -243,7 +242,7 @@ def display_all_data(time_series_bundle_release_date,
         x_list = [[int(steamspy_database[appID][feature_str])
                    for appID in bundle_content] for bundle_content in time_series_bundle_content_appIDs]
 
-        plot_time_series(x_list, feature_str, x_tick_as_dates, save_to_file)
+        plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
     return
 
@@ -285,10 +284,18 @@ def plot_all_time_series(bundles, save_to_file=False, verbose=False,
 
     # Display prepared data
 
+    if save_to_file:
+        if remove_last_bundle_because_only_early_unlocks:
+            output_folder = 'plots_fully_revealed_bundles/'
+        else:
+            output_folder = 'plots/'
+    else:
+        output_folder = None
+
     display_all_data(time_series_bundle_release_date,
                      time_series_bundle_content_release_dates,
                      time_series_bundle_content_appIDs,
-                     save_to_file)
+                     output_folder)
 
     return
 
