@@ -156,7 +156,7 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, save_to_file=Fal
         ub = None
         lb = None
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(dpi=300)
     dotted_color = color + '--'
 
     if sig is not None:
@@ -191,28 +191,15 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, save_to_file=Fal
     return
 
 
-if __name__ == '__main__':
-    filename = 'data/wiki_humble_monthly.txt'
-    bundles = build_dictionary_with_metadata(filename)
-
-    # Aggregate data
-
-    time_series_bundle_release_date = build_time_series_of_bundle_release_date(bundles)
-    print(time_series_bundle_release_date)
-
-    time_series_bundle_content_release_dates = build_time_series_of_bundle_content_release_dates(bundles)
-    print(time_series_bundle_content_release_dates)
-
-    time_series_bundle_content_appIDs = build_time_series_of_bundle_content_appIDs(bundles)
-    print(time_series_bundle_content_appIDs)
-
-    # SteamSpy
+def display_all_data(time_series_bundle_release_date,
+                     time_series_bundle_content_release_dates,
+                     time_series_bundle_content_appIDs,
+                     save_to_file=False):
+    # Objective: display prepared data
 
     steamspy_database = getTodaysSteamSpyData()
 
     # Display options
-
-    save_to_file = True
 
     x_tick_as_dates = time_series_bundle_release_date
 
@@ -257,3 +244,52 @@ if __name__ == '__main__':
                    for appID in bundle_content] for bundle_content in time_series_bundle_content_appIDs]
 
         plot_time_series(x_list, feature_str, x_tick_as_dates, save_to_file)
+
+    return
+
+
+def prepare_all_data_for_display(bundles, verbose=False):
+    # Objective: prepare data for display
+
+    time_series_bundle_release_date = build_time_series_of_bundle_release_date(bundles)
+    if verbose:
+        print(time_series_bundle_release_date)
+
+    time_series_bundle_content_release_dates = build_time_series_of_bundle_content_release_dates(bundles)
+    if verbose:
+        print(time_series_bundle_content_release_dates)
+
+    time_series_bundle_content_appIDs = build_time_series_of_bundle_content_appIDs(bundles)
+    if verbose:
+        print(time_series_bundle_content_appIDs)
+
+    return (time_series_bundle_release_date,
+            time_series_bundle_content_release_dates,
+            time_series_bundle_content_appIDs)
+
+
+def plot_all_time_series(bundles, save_to_file=False, verbose=False):
+    # Prepare data
+
+    (time_series_bundle_release_date,
+     time_series_bundle_content_release_dates,
+     time_series_bundle_content_appIDs) = prepare_all_data_for_display(bundles, verbose)
+
+    # Display prepared data
+
+    display_all_data(time_series_bundle_release_date,
+                     time_series_bundle_content_release_dates,
+                     time_series_bundle_content_appIDs,
+                     save_to_file)
+
+    return
+
+
+if __name__ == '__main__':
+    filename = 'data/wiki_humble_monthly.txt'
+    bundles = build_dictionary_with_metadata(filename)
+
+    save_to_file = True
+    verbose = True
+
+    plot_all_time_series(bundles, save_to_file, verbose)
