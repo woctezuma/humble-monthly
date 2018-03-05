@@ -1,4 +1,6 @@
-# Plots
+# Plots of both fully-revealed & partially-revealed bundles
+
+In contrast to [`plots_fully_revealed_bundles/`](../plots_fully_revealed_bundles/), this folder features both fully-revealed and partially-revaled bundles, which means the last bundle in the timeserie might only contain Early Unlocks.
 
 **Caveat**: whenever a plot shows shaded areas, the data is averaged for each Humble Monthly bundle, and the plot shows the mean (dotted line) and the 95%-confidence interval (shaded area). For instance, the plot with respect to `price` does not show the total price (the sum of Manufacturer's Suggested Retail Prices) but the average price of the Steam games included in each Humble Monthly Bundle.   
 
