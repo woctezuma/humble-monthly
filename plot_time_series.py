@@ -268,12 +268,20 @@ def prepare_all_data_for_display(bundles, verbose=False):
             time_series_bundle_content_appIDs)
 
 
-def plot_all_time_series(bundles, save_to_file=False, verbose=False):
+def plot_all_time_series(bundles, save_to_file=False, verbose=False,
+                         remove_last_bundle_because_only_early_unlocks=False):
     # Prepare data
 
     (time_series_bundle_release_date,
      time_series_bundle_content_release_dates,
      time_series_bundle_content_appIDs) = prepare_all_data_for_display(bundles, verbose)
+
+    # Remove the last bundle if it is not fully known: typically if only the Early Unlocks are known at runtime.
+
+    if remove_last_bundle_because_only_early_unlocks:
+        time_series_bundle_release_date = time_series_bundle_release_date[:-1]
+        time_series_bundle_content_release_dates = time_series_bundle_content_release_dates[:-1]
+        time_series_bundle_content_appIDs = time_series_bundle_content_appIDs[:-1]
 
     # Display prepared data
 
@@ -292,4 +300,7 @@ if __name__ == '__main__':
     save_to_file = True
     verbose = True
 
-    plot_all_time_series(bundles, save_to_file, verbose)
+    # Remove the last bundle if it is not fully known: typically if only the Early Unlocks are known at runtime.
+    remove_last_bundle_because_only_early_unlocks = False
+
+    plot_all_time_series(bundles, save_to_file, verbose, remove_last_bundle_because_only_early_unlocks)
