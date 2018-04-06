@@ -4,7 +4,7 @@ This repository contains code to analyze the content of past Humble Monthly Bund
 
 ## Data ##
 
-Data is included in the [`data/`](data/) folder, as downloaded on March 3, 2018.
+Data is included in the [`data/`](data/) folder, as downloaded on April 6, 2018.
 
 In case you want to tinker with part of the pre-processed data, [a snapshot](https://gist.githubusercontent.com/woctezuma/e9355ea0dfa30746ccf101b2053c064a/raw/c7f990eda6e9dd74deaa42869e6f29d08ace7efc/humble_monthly_data.txt) is made available. This includes every release date.
 
