@@ -229,7 +229,7 @@
 {{Bundle|MTA=|title=''[[Slime-san]]''|Developer=[[Fabraz]]|Release=2017}}
 {{Bundle|MTA=|title=''[[Jawns]]''|Developer=[[Cipher Prime]]  (Humble Original)|Release=2017}}
 {{BundleDescription|list={{collapsible list|title=Additional bundle details|
-* Charity:[[Extra Life]]}}}}
+* Charity:[[Extra Life (fundraiser)|Extra Life]]}}}}
 
 {{BundleFirstRow|rowspan=11|Bundle='''May 2017 Humble Monthly Bundle'''<ref name="humblebundle.com">[https://www.humblebundle.com/monthly/p/december_2016_monthly  ''This was the March 2017 Humble Monthly Bundle.''] at humblebundle.com</ref><ref name="Nifflas' Games press sheet">[http://uurnog.com/presskit/sheet.php?p=uurnog  ''Nifflas' Games press sheet''] at uurnog.com</ref>|Period=April 2017
 |MTA=|title=''[[Dirt Rally]]''|Developer=[[Codemasters]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
@@ -260,7 +260,7 @@
 * Charity: [[Charity: Water|Water]]}}
 }}
 
-{{BundleFirstRow|rowspan=10|Bundle='''July 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/july_2017_monthly  ''This was the July 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=June 2017
+{{BundleFirstRow|rowspan=10|Bundle='''July 2017 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/july_2017_monthly  ''This was the July 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=June 2017
 |MTA=|title=''[[Galactic Civilizations III]]''|Developer=[[Stardock]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|MTA=|title=''[[Hyper Light Drifter]]''|Developer=[[Heart Machine]]|Release=2016}}
 {{Bundle|MTA=|title=''[[Dark Souls II]]: Scholar of the First Sin''|Developer=''[[FromSoftware]]'' | Release=2014 }}
@@ -274,7 +274,7 @@
 * Charity: [[Charity: Water|Water]]}}
 }}
 
-{{BundleFirstRow|rowspan=11|Bundle='''August 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/august_2017_monthly  ''This was the August 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=July 2017
+{{BundleFirstRow|rowspan=11|Bundle='''August 2017 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/august_2017_monthly  ''This was the August 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=July 2017
 |MTA=|title=''[[One Piece Burning Blood]]''|Developer=[[Spike Chunsoft]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|MTA=|title=''[[Offworld Trading Company]]''|Developer=[[Mohawk Games]]|Release=2016}}
 {{Bundle|MTA=|title=''[[Pillars of Eternity|Pillars of Eternity - Hero Edition]]''|Developer=[[Obsidian Entertainment]] | Release=2015 }}
@@ -289,7 +289,7 @@
 * Charity: [[Charity: Water|Water]]}}
 }}
 
-{{BundleFirstRow|rowspan=9|Bundle='''September 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/September_2017_monthly  ''This was the September 2017 Humble Monthly Bundle.''] {{webarchive|url=https://web.archive.org/web/20171107222255/https://www.humblebundle.com/monthly/p/september_2017_monthly |date=November 7, 2017 }} at humblebundle.com</ref>|Period=August 2017
+{{BundleFirstRow|rowspan=9|Bundle='''September 2017 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/September_2017_monthly  ''This was the September 2017 Humble Monthly Bundle.''] {{webarchive|url=https://web.archive.org/web/20171107222255/https://www.humblebundle.com/monthly/p/september_2017_monthly |date=November 7, 2017 }} at humblebundle.com</ref>|Period=August 2017
 |MTA=|title=''[[The Banner Saga 2]]''|Developer=[[Stoic Studio]]|Year=2016|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|MTA=|title=''[[Momodora: Reverie Under the Moonlight]]''|Developer=[[Bombservice]]|Release=2016}}
 {{Bundle|MTA=|title=''[[Killing Floor 2]]''|Developer=[[Tripwire interactive]]|Release=2016}}
@@ -302,7 +302,7 @@
 * Charity: [[The AbleGamers Foundation|AbleGamers]]}}
 }}
 
-{{BundleFirstRow|rowspan=9|Bundle='''October 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/October_2017_monthly  ''This was the October 2017 Humble Monthly Bundle.''] {{webarchive|url=https://web.archive.org/web/20171115004650/https://www.humblebundle.com/monthly/p/october_2017_monthly |date=November 15, 2017 }} at humblebundle.com</ref>|Period=September 2017
+{{BundleFirstRow|rowspan=9|Bundle='''October 2017 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/October_2017_monthly  ''This was the October 2017 Humble Monthly Bundle.''] {{webarchive|url=https://web.archive.org/web/20171115004650/https://www.humblebundle.com/monthly/p/october_2017_monthly |date=November 15, 2017 }} at humblebundle.com</ref>|Period=September 2017
 |title=''[[Wargame: Red Dragon]]''|Developer=[[Eugen Systems]]|Year=2014|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|title=''[[Furi]]''|Developer=[[The Game Bakers]]|Release=2016}}
 {{Bundle|title=''[[Rise of the Tomb Raider]]''|Developer=[[Crystal Dynamics]]|Release=2015}}
@@ -315,7 +315,7 @@
 * Charity: [[Action Against Hunger]]}}
 }}
 
-{{BundleFirstRow|rowspan=11|Bundle='''November 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/November_2017_monthly  ''This was the November 2017 Humble Monthly Bundle.''] {{webarchive|url=https://web.archive.org/web/20171106164618/https://www.humblebundle.com/monthly/p/november_2017_monthly |date=November 6, 2017 }} at humblebundle.com</ref>|Period=October 2017
+{{BundleFirstRow|rowspan=11|Bundle='''November 2017 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/November_2017_monthly  ''This was the November 2017 Humble Monthly Bundle.''] {{webarchive|url=https://web.archive.org/web/20171106164618/https://www.humblebundle.com/monthly/p/november_2017_monthly |date=November 6, 2017 }} at humblebundle.com</ref>|Period=October 2017
 |title=''[[Resident Evil 5|Resident Evil 5 Gold Edition]]''|Developer=[[Capcom]]|Year=2009|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|title=''[[Shadow Tactics: Blades of the Shogun]]''|Developer=[[Mimimi Productions]]|Release=2016}}
 {{Bundle|title=''[[The Elder Scrolls Online]]''|Developer=[[ZeniMax Online Studios]]|Release=2014}}
@@ -330,12 +330,12 @@
 * Charity: [[SpecialEffect]]}}
 }}
 
-{{BundleFirstRow|rowspan=11|Bundle='''December 2017 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/december_2017_monthly  ''This was the December 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=November 2017
+{{BundleFirstRow|rowspan=11|Bundle='''December 2017 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/december_2017_monthly  ''This was the December 2017 Humble Monthly Bundle.''] at humblebundle.com</ref>|Period=November 2017
 |title=''[[Rivals of Aether]]''|Developer=[[Dan Fornace]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|title=''[[H1Z1]]''|Developer=[[Daybreak Game Company]]|Release=2016}}
 {{Bundle|title=''[[BlazBlue: Calamity Trigger]]''|Developer=[[Arc System Works]]|Release=2008}}
 {{Bundle|title=''[[Nex Machina]]''|Developer=[[Housemarque]]|Release=2017}}
-{{Bundle|title=''[[The Sexy Brutale]]''|Developer=[[Tequila Works]],[[Cavalier Game Studios]]|Release=2017}}
+{{Bundle|title=''[[The Sexy Brutale]]''|Developer=[[Tequila Works]], [[Cavalier Game Studios]]|Release=2017}}
 {{Bundle|title=''[[Strafe]]''|Developer=[[Pixel Titans]]|Release=2017}}
 {{Bundle|title=''[[Passpartout: The Starving Artist]]''|Developer=[[Flamebait Games]]|Release=2017}}
 {{Bundle|title=''[[Way of the Passive Fist (Sneak Peek)]]''|Developer=[[Household Games Inc.]]|Release=2018}}
@@ -350,7 +350,7 @@
 ===2018===
 
 {{BundleStart}}
-{{BundleFirstRow|rowspan=10|Bundle='''January 2018 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/january_2018_monthly  ''Start up the year with a bundle of new games!''] at humblebundle.com</ref>|Period=December 2017
+{{BundleFirstRow|rowspan=10|Bundle='''January 2018 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/january_2018_monthly  ''Start up the year with a bundle of new games!''] at humblebundle.com</ref>|Period=December 2017
 |title=''[[Tomb Raider (2013 video game)|Tomb Raider]]''|Developer=[[Crystal Dynamics]]|Year=2013|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|title=''[[Sleeping Dogs (video game)|Sleeping Dogs: Definitive Edition]]''|Developer=[[United Front Games]]|Release=2012}}
 {{Bundle|title=''[[Quantum Break]]''|Developer=[[Remedy Entertainment]]|Release=2016}}
@@ -364,7 +364,7 @@
 * Charity: [[Charity: Water]]}}
 }}
 
-{{BundleFirstRow|rowspan=9|Bundle='''February 2018 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/february_2018_monthly  ''Here it is: your February 2018 Humble Monthly Bundle!''] at humblebundle.com</ref>|Period=January 2018
+{{BundleFirstRow|rowspan=9|Bundle='''February 2018 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/february_2018_monthly  ''Here it is: your February 2018 Humble Monthly Bundle!''] at humblebundle.com</ref>|Period=January 2018
 |title=''[[Life Is Strange]]''|Developer=[[Dontnod Entertainment]]|Year=2015|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|title=''[[Tacoma (video game)|Tacoma]]''|Developer=[[Fullbright (company)|Fullbright]]|Release=2017}}
 {{Bundle|title=''[[Civilization VI]]''|Developer=[[Firaxis Games]]|Release=2016}}
@@ -377,8 +377,8 @@
 * Charity: [[World Land Trust]]}}
 }}
 
-{{BundleFirstRow|rowspan=9|Bundle='''March 2018 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/march_2018_monthly  ''Here it is: your March 2018 Humble Monthly Bundle!''] at humblebundle.com</ref>|Period=February 2018
-|title=''[[Overgrowth]]''|Developer=|Year=|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{BundleFirstRow|rowspan=9|Bundle='''March 2018 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/march_2018_monthly  ''Here it is: your March 2018 Humble Monthly Bundle!''] at humblebundle.com</ref>|Period=February 2018
+|title=''Overgrowth''|Developer=|Year=|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|title=''[[Dark Souls III]]''|Developer=|Release=}}
 {{Bundle|title=''[[Splasher]]''|Developer=|Release=}}
 {{Bundle|title=''[[Drawkanoid]]''|Developer=|Release=}}
@@ -390,11 +390,25 @@
 * Charity: }}
 }}
 
-{{BundleFirstRow|rowspan=5|Bundle='''April 2018 Humble Monthly Bundle''' <ref>[https://www.humblebundle.com/monthly/p/april_2018_monthly  ''Here it is: your April 2018 Humble Monthly Bundle!''] at humblebundle.com</ref>|Period=March 2018
+{{BundleFirstRow|rowspan=11|Bundle='''April 2018 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/april_2018_monthly  ''Here it is: your April 2018 Humble Monthly Bundle!''] at humblebundle.com</ref>|Period=March 2018
 |title=''[[Deus Ex: Mankind Divided]]''|Developer=|Year=|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
 {{Bundle|title=''[[God Eater 2: Rage Burst]]''|Developer=|Release=}}
 {{Bundle|title=''[[God Eater: Resurrection]]''|Developer=|Release=}}
 {{Bundle|title=''[[Mafia III]]''|Developer=|Release=}}
+{{Bundle|title=''[[Outlast 2]]''|Developer=|Release=}}
+{{Bundle|title=''[[Lara Croft GO]]''|Developer=|Release=}}
+{{Bundle|title=''[[Subterrain]]''|Developer=|Release=}}
+{{Bundle|title=''[[AER Memories of Old]]''|Developer=|Release=}}
+{{Bundle|title=''[[Laser League]]''|Developer=|Release=}}
+{{Bundle|title=''[[Lyric Sonata]]''|Developer=Humble Original|Release=}}
+{{BundleDescription|list={{collapsible list|title=Additional bundle details|
+* Charity: }}
+}}
+
+{{BundleFirstRow|rowspan=4|Bundle='''May 2018 Humble Monthly Bundle'''<ref>[https://www.humblebundle.com/monthly/p/may_2018_monthly  ''Here it is: your May 2018 Humble Monthly Bundle!''] at humblebundle.com</ref>|Period=April 2018
+|title=''[[Dead Rising 4]]''|Developer=|Year=|Raised=N/A|Purchases=N/A|Avg=$12 / month}}
+{{Bundle|title=''[[Kerbal Space Program]]''|Developer=|Release=}}
+{{Bundle|title=''[[RUINER]]''|Developer=|Release=}}
 {{BundleDescription|list={{collapsible list|title=Additional bundle details|
 * Charity: }}
 }}
