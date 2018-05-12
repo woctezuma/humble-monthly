@@ -260,6 +260,9 @@ def display_all_data(time_series_bundle_release_date,
             # Catch problem due to SteamSpy providing a range of owners instead of a point-estimate.
             print('Impossible conversion to int for feature = ' + feature_str)
             continue
+        except KeyError:
+            print('Impossible to find feature = ' + feature_str)
+            continue
 
         plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
