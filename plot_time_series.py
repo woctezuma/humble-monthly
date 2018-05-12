@@ -308,7 +308,7 @@ def plot_all_time_series(bundles, save_to_file=False, verbose=False,
     return
 
 
-if __name__ == '__main__':
+def main():
     filename = 'data/wiki_humble_monthly.txt'
     bundles = build_dictionary_with_metadata(filename)
 
@@ -319,3 +319,9 @@ if __name__ == '__main__':
     remove_last_bundle_because_only_early_unlocks = False
 
     plot_all_time_series(bundles, save_to_file, verbose, remove_last_bundle_because_only_early_unlocks)
+
+    return True
+
+
+if __name__ == '__main__':
+    main()
