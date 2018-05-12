@@ -243,16 +243,23 @@ def display_all_data(time_series_bundle_release_date,
                     ]
 
     for feature_str in feature_list:
-        x_list = [
-            [
-                int(steamspy_database[appID][feature_str])
-                for appID in bundle_content
-                # Ignore empty features. NB: It only happened once for appID=438790 ('Random Access Murder') for which
-                # SteamSpy shows an empty string as 'score_rank', due to 'userscore' being '0', which is likely a bug.
-                if steamspy_database[appID][feature_str] != ''
+
+        try:
+            x_list = [
+                [
+                    int(steamspy_database[appID][feature_str])
+                    for appID in bundle_content
+                    # Ignore empty features. NB: It only happened once for appID=438790 ('Random Access Murder') for which
+                    # SteamSpy shows an empty string as 'score_rank', due to 'userscore' being '0', which is likely a bug.
+                    if steamspy_database[appID][feature_str] != ''
+                ]
+                for bundle_content in time_series_bundle_content_appIDs
             ]
-            for bundle_content in time_series_bundle_content_appIDs
-        ]
+
+        except ValueError:
+            # Catch problem due to SteamSpy providing a range of owners instead of a point-estimate.
+            print('Impossible conversion to int for feature = ' + feature_str)
+            continue
 
         plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
