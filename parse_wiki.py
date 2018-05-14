@@ -1,8 +1,8 @@
 import re
 
 
-def load_wiki_file(filename):
-    with open(filename, encoding='utf8') as f:
+def load_wiki_file(fname):
+    with open(fname, encoding='utf8') as f:
         lines = [l.strip() for l in f.readlines()]
 
     return lines
@@ -23,7 +23,7 @@ def parse_bundle_name(wiki_str):
     return bundle_name
 
 
-def parse_game_name(wiki_str, verbose=False):
+def parse_game_name(wiki_str, is_verbose=False):
     # Tokenize and strip
     wiki_tokens = [s.strip() for s in re.split('\|', wiki_str)]
 
@@ -49,7 +49,7 @@ def parse_game_name(wiki_str, verbose=False):
         # Remove any hyperlink
         hyperlink_tokens = re.split('\|', game_name)
         if len(hyperlink_tokens) > 1:
-            if verbose:
+            if is_verbose:
                 print(hyperlink_tokens)
             game_name = hyperlink_tokens[-1]
 
@@ -65,16 +65,16 @@ def parse_game_name(wiki_str, verbose=False):
     return game_name
 
 
-def build_dictionary(filename, verbose=False):
-    bundles = dict()
+def build_dictionary(fname, is_verbose=False):
+    game_bundles = dict()
     bundle_name = None
 
     bundle_entry_prefix = '{{BundleFirstRow'
     game_entry_prefix = '{{Bundle|'
-    game_single_entry_prefix_MTA = '|MTA='
+    game_single_entry_prefix_mta = '|MTA='
     game_single_entry_prefix_title = '|title='
 
-    lines = load_wiki_file(filename)
+    lines = load_wiki_file(fname)
 
     for wiki_str in lines:
         if wiki_str.startswith(bundle_entry_prefix):
@@ -82,22 +82,22 @@ def build_dictionary(filename, verbose=False):
 
             game_name = parse_game_name(wiki_str)
 
-            bundles[bundle_name] = []
+            game_bundles[bundle_name] = []
             if game_name is not None:
-                bundles[bundle_name].append(game_name)
+                game_bundles[bundle_name].append(game_name)
 
         elif wiki_str.startswith(game_entry_prefix) \
-                or wiki_str.startswith(game_single_entry_prefix_MTA) \
+                or wiki_str.startswith(game_single_entry_prefix_mta) \
                 or wiki_str.startswith(game_single_entry_prefix_title):
             game_name = parse_game_name(wiki_str)
-            bundles[bundle_name].append(game_name)
+            game_bundles[bundle_name].append(game_name)
 
         else:
-            if verbose:
+            if is_verbose:
                 print('Ignored line:\t' + wiki_str)
             continue
 
-    return bundles
+    return game_bundles
 
 
 if __name__ == '__main__':

@@ -4,12 +4,17 @@ import matplotlib
 
 matplotlib.use('Agg')
 
+# noinspection PyPep8
 import matplotlib.patches as mpatches
+# noinspection PyPep8
 import matplotlib.pyplot as plt
+# noinspection PyPep8
 import numpy as np
+# noinspection PyPep8,PyPep8Naming
 from matplotlib.colors import colorConverter as cc
-
-from download_json import getTodaysSteamSpyData
+# noinspection PyPep8
+from download_json import get_todays_steam_spy_data
+# noinspection PyPep8
 from fill_in_meta_data import build_dictionary_with_metadata
 
 
@@ -47,24 +52,24 @@ def build_time_series_of_bundle_content_release_dates(bundles_dict):
     return time_series_bundle_content_release_dates
 
 
-def build_time_series_of_bundle_content_appIDs(bundles_dict):
+def build_time_series_of_bundle_content_app_ids(bundles_dict):
     # For each monthly bundle, store the list of appIDs
 
-    time_series_bundle_content_appIDs = []
+    time_series_bundle_content_app_ids = []
 
     months_in_chronological_order = sorted(bundles_dict.keys())
 
     for month in months_in_chronological_order:
         bundle_content = bundles_dict[month]['content'].keys()
 
-        appIDs = list(bundle_content)
+        app_ids = list(bundle_content)
 
-        time_series_bundle_content_appIDs.append(appIDs)
+        time_series_bundle_content_app_ids.append(app_ids)
 
-    return time_series_bundle_content_appIDs
+    return time_series_bundle_content_app_ids
 
 
-def plot_mean_and_CI(mean, lb, ub, x_tick_as_dates=None, color_mean=None, color_shading=None):
+def plot_mean_and_ci(mean, lb, ub, x_tick_as_dates=None, color_mean=None, color_shading=None):
     # Reference: https://studywolf.wordpress.com/2017/11/21/matplotlib-legends-for-mean-and-confidence-interval-plots/
 
     if x_tick_as_dates is None:
@@ -77,6 +82,7 @@ def plot_mean_and_CI(mean, lb, ub, x_tick_as_dates=None, color_mean=None, color_
     plt.plot(x_tick_as_dates, mean, color_mean)
 
 
+# noinspection PyTypeChecker
 def display_demo():
     # Reference: https://studywolf.wordpress.com/2017/11/21/matplotlib-legends-for-mean-and-confidence-interval-plots/
 
@@ -94,10 +100,10 @@ def display_demo():
     lb2 = mean2 - np.random.random(50) - .5
 
     # plot the data
-    fig = plt.figure(1, figsize=(7, 2.5))
-    plot_mean_and_CI(mean0, ub0, lb0, color_mean='k', color_shading='k')
-    plot_mean_and_CI(mean1, ub1, lb1, color_mean='b', color_shading='b')
-    plot_mean_and_CI(mean2, ub2, lb2, color_mean='g--', color_shading='g')
+    plt.figure(1, figsize=(7, 2.5))
+    plot_mean_and_ci(mean0, ub0, lb0, color_mean='k', color_shading='k')
+    plot_mean_and_ci(mean1, ub1, lb1, color_mean='b', color_shading='b')
+    plot_mean_and_ci(mean2, ub2, lb2, color_mean='g--', color_shading='g')
 
     class LegendObject(object):
         def __init__(self, facecolor='red', edgecolor='white', dashed=False):
@@ -105,6 +111,7 @@ def display_demo():
             self.edgecolor = edgecolor
             self.dashed = dashed
 
+        # noinspection PyUnusedLocal
         def legend_artist(self, legend, orig_handle, fontsize, handlebox):
             x0, y0 = handlebox.xdescent, handlebox.ydescent
             width, height = handlebox.width, handlebox.height
@@ -164,7 +171,7 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, output_folder=No
     dotted_color = color + '--'
 
     if sig is not None:
-        plot_mean_and_CI(mean, ub, lb, x_tick_as_dates, color_mean=dotted_color, color_shading=color)
+        plot_mean_and_ci(mean, ub, lb, x_tick_as_dates, color_mean=dotted_color, color_shading=color)
         plt.title(feature_str + ', with 95% confidence')
     else:
         plt.plot(x_tick_as_dates, mean, color)
@@ -196,11 +203,11 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, output_folder=No
 
 def display_all_data(time_series_bundle_release_date,
                      time_series_bundle_content_release_dates,
-                     time_series_bundle_content_appIDs,
+                     time_series_bundle_content_app_ids,
                      output_folder=None):
     # Objective: display prepared data
 
-    steamspy_database = getTodaysSteamSpyData()
+    steamspy_database = get_todays_steam_spy_data()
 
     # Display options
 
@@ -210,7 +217,7 @@ def display_all_data(time_series_bundle_release_date,
 
     feature_str = 'Number of Steam games'
 
-    x_list = [len(bundle_content) for bundle_content in time_series_bundle_content_appIDs]
+    x_list = [len(bundle_content) for bundle_content in time_series_bundle_content_app_ids]
 
     plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
@@ -219,7 +226,7 @@ def display_all_data(time_series_bundle_release_date,
     feature_str = 'Number of reviews'
 
     x_list = [[(steamspy_database[appID]['positive'] + steamspy_database[appID]['negative'])
-               for appID in bundle_content] for bundle_content in time_series_bundle_content_appIDs]
+               for appID in bundle_content] for bundle_content in time_series_bundle_content_app_ids]
 
     plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
@@ -249,11 +256,12 @@ def display_all_data(time_series_bundle_release_date,
                 [
                     int(steamspy_database[appID][feature_str])
                     for appID in bundle_content
-                    # Ignore empty features. NB: It only happened once for appID=438790 ('Random Access Murder') for which
-                    # SteamSpy shows an empty string as 'score_rank', due to 'userscore' being '0', which is likely a bug.
+                    # Ignore empty features. NB: It only happened once for appID=438790 ('Random Access Murder') for
+                    # which SteamSpy shows an empty string as 'score_rank' due to 'userscore' being '0', which is
+                    # likely a bug.
                     if steamspy_database[appID][feature_str] != ''
                 ]
-                for bundle_content in time_series_bundle_content_appIDs
+                for bundle_content in time_series_bundle_content_app_ids
             ]
 
         except ValueError:
@@ -280,13 +288,13 @@ def prepare_all_data_for_display(bundles, verbose=False):
     if verbose:
         print(time_series_bundle_content_release_dates)
 
-    time_series_bundle_content_appIDs = build_time_series_of_bundle_content_appIDs(bundles)
+    time_series_bundle_content_app_ids = build_time_series_of_bundle_content_app_ids(bundles)
     if verbose:
-        print(time_series_bundle_content_appIDs)
+        print(time_series_bundle_content_app_ids)
 
     return (time_series_bundle_release_date,
             time_series_bundle_content_release_dates,
-            time_series_bundle_content_appIDs)
+            time_series_bundle_content_app_ids)
 
 
 def plot_all_time_series(bundles, save_to_file=False, verbose=False,
@@ -295,14 +303,14 @@ def plot_all_time_series(bundles, save_to_file=False, verbose=False,
 
     (time_series_bundle_release_date,
      time_series_bundle_content_release_dates,
-     time_series_bundle_content_appIDs) = prepare_all_data_for_display(bundles, verbose)
+     time_series_bundle_content_app_ids) = prepare_all_data_for_display(bundles, verbose)
 
     # Remove the last bundle if it is not fully known: typically if only the Early Unlocks are known at runtime.
 
     if remove_last_bundle_because_only_early_unlocks:
         time_series_bundle_release_date = time_series_bundle_release_date[:-1]
         time_series_bundle_content_release_dates = time_series_bundle_content_release_dates[:-1]
-        time_series_bundle_content_appIDs = time_series_bundle_content_appIDs[:-1]
+        time_series_bundle_content_app_ids = time_series_bundle_content_app_ids[:-1]
 
     # Display prepared data
 
@@ -316,7 +324,7 @@ def plot_all_time_series(bundles, save_to_file=False, verbose=False,
 
     display_all_data(time_series_bundle_release_date,
                      time_series_bundle_content_release_dates,
-                     time_series_bundle_content_appIDs,
+                     time_series_bundle_content_app_ids,
                      output_folder)
 
     return
@@ -324,15 +332,15 @@ def plot_all_time_series(bundles, save_to_file=False, verbose=False,
 
 def main():
     filename = 'data/wiki_humble_monthly.txt'
-    bundles = build_dictionary_with_metadata(filename)
+    humble_bundles = build_dictionary_with_metadata(filename)
 
     save_to_file = True
-    verbose = True
+    is_verbose = True
 
     # Remove the last bundle if it is not fully known: typically if only the Early Unlocks are known at runtime.
     remove_last_bundle_because_only_early_unlocks = False
 
-    plot_all_time_series(bundles, save_to_file, verbose, remove_last_bundle_because_only_early_unlocks)
+    plot_all_time_series(humble_bundles, save_to_file, is_verbose, remove_last_bundle_because_only_early_unlocks)
 
     return True
 
