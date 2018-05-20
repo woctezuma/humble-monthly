@@ -46,4 +46,6 @@ An example is shown below, with the time to bundle, i.e. the time between a game
 
 ![Time to bundle](plots/time_to_bundle__in_years_.png)
 
+## Addendum
+
 If you like these stats, [check out my other repository](https://github.com/woctezuma/steam-api) with a focus on the Steam store.
