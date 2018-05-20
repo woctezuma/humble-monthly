@@ -45,3 +45,5 @@ Plots can be found in the following folders:
 An example is shown below, with the time to bundle, i.e. the time between a game release and its appearance in a Humble Monthly bundle. This time can be negative for a game which is released on Steam after it appeared in a Humble Monthly bundle. Please note that only games for which Steam keys are provided for no additional cost to Humble Monthly subscribers are taken into account. 
 
 ![Time to bundle](plots/time_to_bundle__in_years_.png)
+
+If you like these stats, [check out my other repository](https://github.com/woctezuma/steam-api) with a focus on the Steam store.
