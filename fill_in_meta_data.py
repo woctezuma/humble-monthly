@@ -2,8 +2,8 @@ import datetime
 
 # noinspection PyPep8Naming
 import Levenshtein as lv
+import steamspypi
 
-from download_json import get_todays_steam_spy_data
 from parse_wiki import build_dictionary
 from steamspy_utils import compute_all_name_distances, get_release_date_as_datetime, get_release_date_as_str
 
@@ -31,7 +31,7 @@ def match_game_name_with_app_id(game_name_input, steamspy_database, num_closest_
 
 
 def match_all_game_names_with_app_id(game_names, num_closest_neighbors=1):
-    steamspy_database = get_todays_steam_spy_data()
+    steamspy_database = steamspypi.load()
 
     matched_meta_data_dict = dict()
 
@@ -197,7 +197,7 @@ def fix_incorrect_match(game_name):
 def fix_matched_meta_data_dict(matched_meta_data_dict, is_verbose=False):
     # Manually fix mismatches
 
-    steamspy_database = get_todays_steam_spy_data()
+    steamspy_database = steamspypi.load()
 
     all_game_names = list(matched_meta_data_dict.keys())
 

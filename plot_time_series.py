@@ -1,6 +1,7 @@
 import pathlib
 
 import matplotlib
+import steamspypi
 
 matplotlib.use('Agg')
 
@@ -12,8 +13,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 # noinspection PyPep8,PyPep8Naming
 from matplotlib.colors import colorConverter as cc
-# noinspection PyPep8
-from download_json import get_todays_steam_spy_data
 # noinspection PyPep8
 from fill_in_meta_data import build_dictionary_with_metadata
 
@@ -207,7 +206,7 @@ def display_all_data(time_series_bundle_release_date,
                      output_folder=None):
     # Objective: display prepared data
 
-    steamspy_database = get_todays_steam_spy_data()
+    steamspy_database = steamspypi.load()
 
     # Display options
 
