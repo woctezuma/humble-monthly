@@ -2,10 +2,11 @@ import datetime
 
 # noinspection PyPep8Naming
 import Levenshtein as lv
+import steampi.calendar
+import steampi.text_distances
 import steamspypi
 
 from parse_wiki import build_dictionary
-from steamspy_utils import compute_all_name_distances, get_release_date_as_datetime, get_release_date_as_str
 
 
 def list_all_games(bundles):
@@ -19,7 +20,7 @@ def list_all_games(bundles):
 
 def match_game_name_with_app_id(game_name_input, steamspy_database, num_closest_neighbors=1):
     # Code simplified from find_closest_appID() in schulze_goty.py module in Steam-Era-Goty repository
-    (dist, sorted_app_ids) = compute_all_name_distances(game_name_input, steamspy_database)
+    (sorted_app_ids, dist) = steampi.text_distances.find_most_similar_game_names(game_name_input, steamspy_database)
 
     closest_app_id = sorted_app_ids[0:num_closest_neighbors]
 
@@ -83,12 +84,12 @@ def get_bundle_release_date(bundle_name):
 
 def get_game_release_date_with_app_id(app_id, is_verbose=False):
     try:
-        release_date_as_datetime = get_release_date_as_datetime(app_id)
+        release_date_as_datetime = steampi.calendar.get_release_date_as_datetime(app_id)
     except ValueError:
         release_date_as_datetime = None
 
         if is_verbose:
-            release_date = get_release_date_as_str(app_id)
+            release_date = steampi.calendar.get_release_date_as_str(app_id)
             print('[Warning] No release date (' + release_date + ') could be found for app_id=' + app_id)
 
     return release_date_as_datetime
