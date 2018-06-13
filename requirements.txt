@@ -1,6 +1,6 @@
 matplotlib==2.2.2
 numpy==1.14.3
 python-Levenshtein==0.12.0
-requests==2.18.4
+requests==2.19.0
 steamspypi==0.9.1
 steampi==0.2.4
