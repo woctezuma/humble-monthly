@@ -1,7 +1,6 @@
-import datetime
-
 # noinspection PyPep8Naming
 import Levenshtein as lv
+import datetime
 import steampi.calendar
 import steampi.text_distances
 import steamspypi
@@ -265,7 +264,7 @@ def filter_dictionary_with_meta_data(bundles_raw_dict, matched_meta_data_dict, i
             bundle_content = bundles_raw_dict[bundle_name]
 
             for game_name in bundle_content:
-                (release_date, appID_try_count) = get_game_release_date(game_name, matched_meta_data_dict, is_verbose)
+                (release_date, _) = get_game_release_date(game_name, matched_meta_data_dict, is_verbose)
 
                 if release_date is not None:
                     matched_name = matched_meta_data_dict[game_name]['matched-name'][0]
