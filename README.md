@@ -1,4 +1,6 @@
-# Humble Monthly Bundles  [![Build status][Build image]][Build] [![Updates][Dependency image]][PyUp] [![Python 3][Python3 image]][PyUp] [![Code coverage][Codecov image]][Codecov]
+# Humble Monthly Bundles
+
+[![Build status][Build image]][Build] [![Updates][Dependency image]][PyUp] [![Python 3][Python3 image]][PyUp] [![Code coverage][Codecov image]][Codecov]
 
   [Build]: <https://github.com/woctezuma/humble-monthly/actions>
   [Build image]: <https://github.com/woctezuma/humble-monthly/workflows/Python application/badge.svg?branch=master>
