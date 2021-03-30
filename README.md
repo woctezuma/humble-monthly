@@ -1,7 +1,7 @@
 # Humble Monthly Bundles  [![Build status][Build image]][Build] [![Updates][Dependency image]][PyUp] [![Python 3][Python3 image]][PyUp] [![Code coverage][Codecov image]][Codecov]
 
-  [Build]: https://travis-ci.org/woctezuma/humble-monthly
-  [Build image]: https://travis-ci.org/woctezuma/humble-monthly.svg?branch=master
+  [Build]: <https://github.com/woctezuma/humble-monthly/actions>
+  [Build image]: <https://github.com/woctezuma/humble-monthly/workflows/Python application/badge.svg?branch=master>
 
   [PyUp]: https://pyup.io/repos/github/woctezuma/humble-monthly/
   [Dependency image]: https://pyup.io/repos/github/woctezuma/humble-monthly/shield.svg
