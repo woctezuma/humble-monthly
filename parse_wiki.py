@@ -10,7 +10,7 @@ def load_wiki_file(fname):
 
 def parse_bundle_name(wiki_str):
     # Tokenize
-    wiki_tokens = re.split('\|', wiki_str)
+    wiki_tokens = re.split('\\|', wiki_str)
 
     bundle_name_prefix = 'Bundle='
 
@@ -25,7 +25,7 @@ def parse_bundle_name(wiki_str):
 
 def parse_game_name(wiki_str, is_verbose=False):
     # Tokenize and strip
-    wiki_tokens = [s.strip() for s in re.split('\|', wiki_str)]
+    wiki_tokens = [s.strip() for s in re.split('\\|', wiki_str)]
 
     game_name_prefix = 'title'
     game_name_suffix = 'Developer'
@@ -54,7 +54,7 @@ def parse_game_name(wiki_str, is_verbose=False):
         game_name = game_element[-1]
 
         # Remove any hyperlink
-        hyperlink_tokens = re.split('\|', game_name)
+        hyperlink_tokens = re.split('\\|', game_name)
         if len(hyperlink_tokens) > 1:
             if is_verbose:
                 print(hyperlink_tokens)
@@ -73,7 +73,7 @@ def parse_game_name(wiki_str, is_verbose=False):
 
 
 def build_dictionary(fname, is_verbose=False):
-    game_bundles = dict()
+    game_bundles = {}
     bundle_name = None
 
     bundle_entry_prefix = '{{BundleFirstRow'

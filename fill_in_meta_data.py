@@ -1,6 +1,7 @@
 # noinspection PyPep8Naming
-import Levenshtein as lv
 import datetime
+
+import Levenshtein as lv
 import steampi.calendar
 import steampi.text_distances
 import steamspypi
@@ -40,7 +41,7 @@ def match_game_name_with_app_id(
 def match_all_game_names_with_app_id(game_names, num_closest_neighbors=1):
     steamspy_database = steamspypi.load()
 
-    matched_meta_data_dict = dict()
+    matched_meta_data_dict = {}
 
     for game_name in game_names:
         # noinspection PyPep8
@@ -50,7 +51,7 @@ def match_all_game_names_with_app_id(game_names, num_closest_neighbors=1):
             num_closest_neighbors,
         )
 
-        matched_meta_data_dict[game_name] = dict()
+        matched_meta_data_dict[game_name] = {}
         matched_meta_data_dict[game_name]['original-name'] = game_name
         matched_meta_data_dict[game_name]['matched-name'] = closest_name
         matched_meta_data_dict[game_name]['appID'] = closest_app_id
@@ -168,7 +169,7 @@ def check_if_incorrect_match(game_name, matched_meta_data_dict):
     }
 
     is_manually_detected_correct_match_with_positive_levenshtein_distance = bool(
-        game_name in hard_coded_matches.keys(),
+        game_name in hard_coded_matches,
     )
 
     # noinspection PyPep8
@@ -292,21 +293,21 @@ def filter_dictionary_with_meta_data(
 ):
     # Filter a dictionary so that only games with a known release date are included
 
-    bundles_with_meta_data_dict = dict()
+    bundles_with_meta_data_dict = {}
 
-    for bundle_name in bundles_raw_dict.keys():
+    for bundle_name in bundles_raw_dict:
         release_date = get_bundle_release_date(bundle_name)
 
         if release_date is not None:
             # noinspection PyCallByClass,PyTypeChecker
             monthly_bundle_id = datetime.datetime.strftime(release_date, '%Y-%m')
 
-            bundles_with_meta_data_dict[monthly_bundle_id] = dict()
+            bundles_with_meta_data_dict[monthly_bundle_id] = {}
             bundles_with_meta_data_dict[monthly_bundle_id]['bundle-name'] = bundle_name
             bundles_with_meta_data_dict[monthly_bundle_id][
                 'release-date'
             ] = release_date
-            bundles_with_meta_data_dict[monthly_bundle_id]['content'] = dict()
+            bundles_with_meta_data_dict[monthly_bundle_id]['content'] = {}
 
             bundle_content = bundles_raw_dict[bundle_name]
 
@@ -323,7 +324,7 @@ def filter_dictionary_with_meta_data(
 
                     bundles_with_meta_data_dict[monthly_bundle_id]['content'][
                         app_id
-                    ] = dict()
+                    ] = {}
                     bundles_with_meta_data_dict[monthly_bundle_id]['content'][app_id][
                         'game-name'
                     ] = matched_name

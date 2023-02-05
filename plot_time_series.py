@@ -114,7 +114,7 @@ def display_demo():
     plot_mean_and_ci(mean1, ub1, lb1, color_mean='b', color_shading='b')
     plot_mean_and_ci(mean2, ub2, lb2, color_mean='g--', color_shading='g')
 
-    class LegendObject(object):
+    class LegendObject:
         def __init__(self, facecolor='red', edgecolor='white', dashed=False):
             self.facecolor = facecolor
             self.edgecolor = edgecolor
