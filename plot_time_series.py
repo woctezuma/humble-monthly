@@ -7,12 +7,16 @@ matplotlib.use('Agg')
 
 # noinspection PyPep8
 import matplotlib.patches as mpatches
+
 # noinspection PyPep8
 import matplotlib.pyplot as plt
+
 # noinspection PyPep8
 import numpy as np
+
 # noinspection PyPep8,PyPep8Naming
 from matplotlib.colors import colorConverter as cc
+
 # noinspection PyPep8
 from fill_in_meta_data import build_dictionary_with_metadata
 
@@ -68,15 +72,21 @@ def build_time_series_of_bundle_content_app_ids(bundles_dict):
     return time_series_bundle_content_app_ids
 
 
-def plot_mean_and_ci(mean, lb, ub, x_tick_as_dates=None, color_mean=None, color_shading=None):
+def plot_mean_and_ci(
+    mean,
+    lb,
+    ub,
+    x_tick_as_dates=None,
+    color_mean=None,
+    color_shading=None,
+):
     # Reference: https://studywolf.wordpress.com/2017/11/21/matplotlib-legends-for-mean-and-confidence-interval-plots/
 
     if x_tick_as_dates is None:
         x_tick_as_dates = range(mean.shape[0])
 
     # plot the shaded range of the confidence intervals
-    plt.fill_between(x_tick_as_dates, ub, lb,
-                     color=color_shading, alpha=.5)
+    plt.fill_between(x_tick_as_dates, ub, lb, color=color_shading, alpha=0.5)
     # plot the mean on top
     plt.plot(x_tick_as_dates, mean, color_mean)
 
@@ -87,16 +97,16 @@ def display_demo():
 
     # generate 3 sets of random means and confidence intervals to plot
     mean0 = np.random.random(50)
-    ub0 = mean0 + np.random.random(50) + .5
-    lb0 = mean0 - np.random.random(50) - .5
+    ub0 = mean0 + np.random.random(50) + 0.5
+    lb0 = mean0 - np.random.random(50) - 0.5
 
     mean1 = np.random.random(50) + 2
-    ub1 = mean1 + np.random.random(50) + .5
-    lb1 = mean1 - np.random.random(50) - .5
+    ub1 = mean1 + np.random.random(50) + 0.5
+    lb1 = mean1 - np.random.random(50) - 0.5
 
     mean2 = np.random.random(50) - 1
-    ub2 = mean2 + np.random.random(50) + .5
-    lb2 = mean2 - np.random.random(50) - .5
+    ub2 = mean2 + np.random.random(50) + 0.5
+    lb2 = mean2 - np.random.random(50) - 0.5
 
     # plot the data
     plt.figure(1, figsize=(7, 2.5))
@@ -116,17 +126,26 @@ def display_demo():
             width, height = handlebox.width, handlebox.height
             patch = mpatches.Rectangle(
                 # create a rectangle that is filled with color
-                [x0, y0], width, height, facecolor=self.facecolor,
+                [x0, y0],
+                width,
+                height,
+                facecolor=self.facecolor,
                 # and whose edges are the faded color
-                edgecolor=self.edgecolor, lw=3)
+                edgecolor=self.edgecolor,
+                lw=3,
+            )
             handlebox.add_artist(patch)
 
             # if we're creating the legend for a dashed line,
             # manually add the dash in to our rectangle
             if self.dashed:
                 patch1 = mpatches.Rectangle(
-                    [x0 + 2 * width / 5, y0], width / 5, height, facecolor=self.edgecolor,
-                    transform=handlebox.get_transform())
+                    [x0 + 2 * width / 5, y0],
+                    width / 5,
+                    height,
+                    facecolor=self.edgecolor,
+                    transform=handlebox.get_transform(),
+                )
                 handlebox.add_artist(patch1)
 
             return patch
@@ -136,12 +155,15 @@ def display_demo():
     # with alpha = .5, the faded color is the average of the background and color
     colors_faded = [(np.array(cc.to_rgb(color)) + bg) / 2.0 for color in colors]
 
-    plt.legend([0, 1, 2], ['Data 0', 'Data 1', 'Data 2'],
-               handler_map={
-                   0: LegendObject(colors[0], colors_faded[0]),
-                   1: LegendObject(colors[1], colors_faded[1]),
-                   2: LegendObject(colors[2], colors_faded[2], dashed=True),
-               })
+    plt.legend(
+        [0, 1, 2],
+        ['Data 0', 'Data 1', 'Data 2'],
+        handler_map={
+            0: LegendObject(colors[0], colors_faded[0]),
+            1: LegendObject(colors[1], colors_faded[1]),
+            2: LegendObject(colors[2], colors_faded[2], dashed=True),
+        },
+    )
 
     plt.title('Example mean and confidence interval plot')
     plt.tight_layout()
@@ -151,7 +173,13 @@ def display_demo():
     return
 
 
-def plot_time_series(x_list, feature_str, x_tick_as_dates=None, output_folder=None, color='b'):
+def plot_time_series(
+    x_list,
+    feature_str,
+    x_tick_as_dates=None,
+    output_folder=None,
+    color='b',
+):
     x_vec = np.array([np.array(xi) for xi in x_list])
 
     mean = np.array([np.mean(xi) for xi in x_vec])
@@ -170,7 +198,14 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, output_folder=No
     dotted_color = color + '--'
 
     if sig is not None:
-        plot_mean_and_ci(mean, ub, lb, x_tick_as_dates, color_mean=dotted_color, color_shading=color)
+        plot_mean_and_ci(
+            mean,
+            ub,
+            lb,
+            x_tick_as_dates,
+            color_mean=dotted_color,
+            color_shading=color,
+        )
         plt.title(feature_str + ', with 95% confidence')
     else:
         plt.plot(x_tick_as_dates, mean, color)
@@ -180,13 +215,16 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, output_folder=No
     plt.xlabel('Timeline since the first Humble Monthly bundle was released')
 
     import matplotlib.dates as mdates
+
     ax.xaxis.set_major_formatter(mdates.DateFormatter('%b\n%Y'))
 
     plt.tight_layout()
     plt.grid()
 
     if output_folder is not None:
-        formatted_filename = feature_str.lower().replace(' ', '_').replace('(', '_').replace(')', '_')
+        formatted_filename = (
+            feature_str.lower().replace(' ', '_').replace('(', '_').replace(')', '_')
+        )
         file_extension = '.png'
 
         pathlib.Path(output_folder).mkdir(parents=True, exist_ok=True)
@@ -200,10 +238,12 @@ def plot_time_series(x_list, feature_str, x_tick_as_dates=None, output_folder=No
     return
 
 
-def display_all_data(time_series_bundle_release_date,
-                     time_series_bundle_content_release_dates,
-                     time_series_bundle_content_app_ids,
-                     output_folder=None):
+def display_all_data(
+    time_series_bundle_release_date,
+    time_series_bundle_content_release_dates,
+    time_series_bundle_content_app_ids,
+    output_folder=None,
+):
     # Objective: display prepared data
 
     steamspy_database = steamspypi.load()
@@ -216,7 +256,9 @@ def display_all_data(time_series_bundle_release_date,
 
     feature_str = 'Number of Steam games'
 
-    x_list = [len(bundle_content) for bundle_content in time_series_bundle_content_app_ids]
+    x_list = [
+        len(bundle_content) for bundle_content in time_series_bundle_content_app_ids
+    ]
 
     plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
@@ -224,8 +266,16 @@ def display_all_data(time_series_bundle_release_date,
 
     feature_str = 'Number of reviews'
 
-    x_list = [[(steamspy_database[appID]['positive'] + steamspy_database[appID]['negative'])
-               for appID in bundle_content] for bundle_content in time_series_bundle_content_app_ids]
+    x_list = [
+        [
+            (
+                steamspy_database[appID]['positive']
+                + steamspy_database[appID]['negative']
+            )
+            for appID in bundle_content
+        ]
+        for bundle_content in time_series_bundle_content_app_ids
+    ]
 
     plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
@@ -233,23 +283,31 @@ def display_all_data(time_series_bundle_release_date,
 
     feature_str = 'Time to bundle (in years)'
 
-    x_list = [[(bundle_date - game_date).days / 365.25
-               for game_date in content_dates] for (bundle_date, content_dates) in
-              zip(time_series_bundle_release_date, time_series_bundle_content_release_dates)]
+    x_list = [
+        [(bundle_date - game_date).days / 365.25 for game_date in content_dates]
+        for (bundle_date, content_dates) in zip(
+            time_series_bundle_release_date,
+            time_series_bundle_content_release_dates,
+        )
+    ]
 
     plot_time_series(x_list, feature_str, x_tick_as_dates, output_folder)
 
     # Additional displays
 
-    feature_list = ['score_rank', 'userscore',
-                    'positive', 'negative',
-                    'owners', 'players_forever',
-                    'average_forever', 'median_forever',
-                    'price'
-                    ]
+    feature_list = [
+        'score_rank',
+        'userscore',
+        'positive',
+        'negative',
+        'owners',
+        'players_forever',
+        'average_forever',
+        'median_forever',
+        'price',
+    ]
 
     for feature_str in feature_list:
-
         try:
             x_list = [
                 [
@@ -283,32 +341,46 @@ def prepare_all_data_for_display(bundles, verbose=False):
     if verbose:
         print(time_series_bundle_release_date)
 
-    time_series_bundle_content_release_dates = build_time_series_of_bundle_content_release_dates(bundles)
+    time_series_bundle_content_release_dates = (
+        build_time_series_of_bundle_content_release_dates(bundles)
+    )
     if verbose:
         print(time_series_bundle_content_release_dates)
 
-    time_series_bundle_content_app_ids = build_time_series_of_bundle_content_app_ids(bundles)
+    time_series_bundle_content_app_ids = build_time_series_of_bundle_content_app_ids(
+        bundles,
+    )
     if verbose:
         print(time_series_bundle_content_app_ids)
 
-    return (time_series_bundle_release_date,
-            time_series_bundle_content_release_dates,
-            time_series_bundle_content_app_ids)
+    return (
+        time_series_bundle_release_date,
+        time_series_bundle_content_release_dates,
+        time_series_bundle_content_app_ids,
+    )
 
 
-def plot_all_time_series(bundles, save_to_file=False, verbose=False,
-                         remove_last_bundle_because_only_early_unlocks=False):
+def plot_all_time_series(
+    bundles,
+    save_to_file=False,
+    verbose=False,
+    remove_last_bundle_because_only_early_unlocks=False,
+):
     # Prepare data
 
-    (time_series_bundle_release_date,
-     time_series_bundle_content_release_dates,
-     time_series_bundle_content_app_ids) = prepare_all_data_for_display(bundles, verbose)
+    (
+        time_series_bundle_release_date,
+        time_series_bundle_content_release_dates,
+        time_series_bundle_content_app_ids,
+    ) = prepare_all_data_for_display(bundles, verbose)
 
     # Remove the last bundle if it is not fully known: typically if only the Early Unlocks are known at runtime.
 
     if remove_last_bundle_because_only_early_unlocks:
         time_series_bundle_release_date = time_series_bundle_release_date[:-1]
-        time_series_bundle_content_release_dates = time_series_bundle_content_release_dates[:-1]
+        time_series_bundle_content_release_dates = (
+            time_series_bundle_content_release_dates[:-1]
+        )
         time_series_bundle_content_app_ids = time_series_bundle_content_app_ids[:-1]
 
     # Display prepared data
@@ -321,10 +393,12 @@ def plot_all_time_series(bundles, save_to_file=False, verbose=False,
     else:
         output_folder = None
 
-    display_all_data(time_series_bundle_release_date,
-                     time_series_bundle_content_release_dates,
-                     time_series_bundle_content_app_ids,
-                     output_folder)
+    display_all_data(
+        time_series_bundle_release_date,
+        time_series_bundle_content_release_dates,
+        time_series_bundle_content_app_ids,
+        output_folder,
+    )
 
     return
 
@@ -339,7 +413,12 @@ def main():
     # Remove the last bundle if it is not fully known: typically if only the Early Unlocks are known at runtime.
     remove_last_bundle_because_only_early_unlocks = False
 
-    plot_all_time_series(humble_bundles, save_to_file, is_verbose, remove_last_bundle_because_only_early_unlocks)
+    plot_all_time_series(
+        humble_bundles,
+        save_to_file,
+        is_verbose,
+        remove_last_bundle_because_only_early_unlocks,
+    )
 
     return True
 

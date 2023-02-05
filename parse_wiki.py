@@ -32,15 +32,22 @@ def parse_game_name(wiki_str, is_verbose=False):
 
     # Check whether there is a game name among the tokens
     if any(s.startswith(game_name_prefix) for s in wiki_tokens):
-
         # Find the tokens corresponding to the game name
-        ind_start = [count for (count, s) in enumerate(wiki_tokens) if s.startswith(game_name_prefix)]
-        ind_end = [count for (count, s) in enumerate(wiki_tokens) if s.startswith(game_name_suffix)]
+        ind_start = [
+            count
+            for (count, s) in enumerate(wiki_tokens)
+            if s.startswith(game_name_prefix)
+        ]
+        ind_end = [
+            count
+            for (count, s) in enumerate(wiki_tokens)
+            if s.startswith(game_name_suffix)
+        ]
 
         if len(ind_end) > 0:
-            game_token = ' | '.join(wiki_tokens[ind_start[0]:ind_end[0]])
+            game_token = ' | '.join(wiki_tokens[ind_start[0] : ind_end[0]])
         else:
-            game_token = ' | '.join(wiki_tokens[ind_start[0]:])
+            game_token = ' | '.join(wiki_tokens[ind_start[0] :])
 
         # Extract the game name
         game_element = re.split('title=', game_token)
@@ -86,9 +93,11 @@ def build_dictionary(fname, is_verbose=False):
             if game_name is not None:
                 game_bundles[bundle_name].append(game_name)
 
-        elif wiki_str.startswith(game_entry_prefix) \
-                or wiki_str.startswith(game_single_entry_prefix_mta) \
-                or wiki_str.startswith(game_single_entry_prefix_title):
+        elif (
+            wiki_str.startswith(game_entry_prefix)
+            or wiki_str.startswith(game_single_entry_prefix_mta)
+            or wiki_str.startswith(game_single_entry_prefix_title)
+        ):
             game_name = parse_game_name(wiki_str)
             game_bundles[bundle_name].append(game_name)
 

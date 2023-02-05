@@ -17,9 +17,16 @@ def list_all_games(bundles):
     return game_names
 
 
-def match_game_name_with_app_id(game_name_input, steamspy_database, num_closest_neighbors=1):
+def match_game_name_with_app_id(
+    game_name_input,
+    steamspy_database,
+    num_closest_neighbors=1,
+):
     # Code simplified from find_closest_appID() in schulze_goty.py module in Steam-Era-Goty repository
-    (sorted_app_ids, dist) = steampi.text_distances.find_most_similar_game_names(game_name_input, steamspy_database)
+    (sorted_app_ids, dist) = steampi.text_distances.find_most_similar_game_names(
+        game_name_input,
+        steamspy_database,
+    )
 
     closest_app_id = sorted_app_ids[0:num_closest_neighbors]
 
@@ -37,8 +44,11 @@ def match_all_game_names_with_app_id(game_names, num_closest_neighbors=1):
 
     for game_name in game_names:
         # noinspection PyPep8
-        (closest_app_id, closest_distance, closest_name) = match_game_name_with_app_id(game_name, steamspy_database,
-                                                                                       num_closest_neighbors)
+        (closest_app_id, closest_distance, closest_name) = match_game_name_with_app_id(
+            game_name,
+            steamspy_database,
+            num_closest_neighbors,
+        )
 
         matched_meta_data_dict[game_name] = dict()
         matched_meta_data_dict[game_name]['original-name'] = game_name
@@ -64,7 +74,9 @@ def adjust_date_to_first_friday_of_the_month(release_date_as_datetime):
         num_days_in_a_week = 7
         delta_to_next_friday = num_days_in_a_week + friday_int - weekday_int
 
-    release_date_as_datetime = release_date_as_datetime + datetime.timedelta(days=delta_to_next_friday)
+    release_date_as_datetime = release_date_as_datetime + datetime.timedelta(
+        days=delta_to_next_friday,
+    )
 
     return release_date_as_datetime
 
@@ -76,7 +88,9 @@ def get_bundle_release_date(bundle_name):
     release_date_as_datetime = datetime.datetime.strptime(release_date_str, '%B %Y')
 
     # Find the first Friday of the month
-    release_date_as_datetime = adjust_date_to_first_friday_of_the_month(release_date_as_datetime)
+    release_date_as_datetime = adjust_date_to_first_friday_of_the_month(
+        release_date_as_datetime,
+    )
 
     return release_date_as_datetime
 
@@ -89,7 +103,12 @@ def get_game_release_date_with_app_id(app_id, is_verbose=False):
 
         if is_verbose:
             release_date = steampi.calendar.get_release_date_as_str(app_id)
-            print('[Warning] No release date (' + release_date + ') could be found for app_id=' + app_id)
+            print(
+                '[Warning] No release date ('
+                + release_date
+                + ') could be found for app_id='
+                + app_id,
+            )
 
     return release_date_as_datetime
 
@@ -124,7 +143,9 @@ def check_if_incorrect_match(game_name, matched_meta_data_dict):
     # - the Levenshtein distance for game_name is zero,
     # - game_name is among the correct matches (manually detected) which have a positive Levenshtein distance.
 
-    has_zero_levenshtein_distance = bool(matched_meta_data_dict[game_name]['Levenshtein-distance'][0] == 0)
+    has_zero_levenshtein_distance = bool(
+        matched_meta_data_dict[game_name]['Levenshtein-distance'][0] == 0,
+    )
 
     hard_coded_matches = {
         # Correct matches
@@ -146,11 +167,15 @@ def check_if_incorrect_match(game_name, matched_meta_data_dict):
         'Holy Potatoes! We’re in Space?!': 'Holy Potatoes! Were in Space?!',
     }
 
-    is_manually_detected_correct_match_with_positive_levenshtein_distance = bool(game_name in hard_coded_matches.keys())
+    is_manually_detected_correct_match_with_positive_levenshtein_distance = bool(
+        game_name in hard_coded_matches.keys(),
+    )
 
     # noinspection PyPep8
-    is_correct_match = has_zero_levenshtein_distance or \
-                       is_manually_detected_correct_match_with_positive_levenshtein_distance
+    is_correct_match = (
+        has_zero_levenshtein_distance
+        or is_manually_detected_correct_match_with_positive_levenshtein_distance
+    )
 
     is_incorrect_match = not is_correct_match
 
@@ -207,11 +232,16 @@ def fix_matched_meta_data_dict(matched_meta_data_dict, is_verbose=False):
             if fixed_app_id is not None:
                 # Fix incorrect match
                 fixed_matched_name = steamspy_database[fixed_app_id]['name']
-                fixed_distance = lv.distance(game_name.lower(), fixed_matched_name.lower())
+                fixed_distance = lv.distance(
+                    game_name.lower(),
+                    fixed_matched_name.lower(),
+                )
 
                 matched_meta_data_dict[game_name]['matched-name'] = [fixed_matched_name]
                 matched_meta_data_dict[game_name]['appID'] = [fixed_app_id]
-                matched_meta_data_dict[game_name]['Levenshtein-distance'] = [fixed_distance]
+                matched_meta_data_dict[game_name]['Levenshtein-distance'] = [
+                    fixed_distance,
+                ]
             else:
                 # Delete incorrect match
                 if is_verbose:
@@ -231,10 +261,22 @@ def display_matches(game_names, matched_meta_data_dict):
             distance = matched_meta_data_dict[game_name]['Levenshtein-distance'][0]
             if distance > 0:
                 # Possible mismatch. Make sure this is actually a good match despite positive distance. Otherwise fix it
-                print('>0\t\'' + game_name + '\'\t:\t\'' + matched_meta_data_dict[game_name]['matched-name'][0] + '\',')
+                print(
+                    '>0\t\''
+                    + game_name
+                    + '\'\t:\t\''
+                    + matched_meta_data_dict[game_name]['matched-name'][0]
+                    + '\',',
+                )
             else:
                 # Perfect match.
-                print('==\t\'' + game_name + '\'\t:\t\'' + matched_meta_data_dict[game_name]['matched-name'][0] + '\',')
+                print(
+                    '==\t\''
+                    + game_name
+                    + '\'\t:\t\''
+                    + matched_meta_data_dict[game_name]['matched-name'][0]
+                    + '\',',
+                )
         except KeyError:
             # Unfixable Mismatch. This should be either a game not on Steam,
             # or no Steam key was provided to Humble Monthly subscribers.
@@ -243,7 +285,11 @@ def display_matches(game_names, matched_meta_data_dict):
     return
 
 
-def filter_dictionary_with_meta_data(bundles_raw_dict, matched_meta_data_dict, is_verbose=False):
+def filter_dictionary_with_meta_data(
+    bundles_raw_dict,
+    matched_meta_data_dict,
+    is_verbose=False,
+):
     # Filter a dictionary so that only games with a known release date are included
 
     bundles_with_meta_data_dict = dict()
@@ -252,27 +298,38 @@ def filter_dictionary_with_meta_data(bundles_raw_dict, matched_meta_data_dict, i
         release_date = get_bundle_release_date(bundle_name)
 
         if release_date is not None:
-
             # noinspection PyCallByClass,PyTypeChecker
             monthly_bundle_id = datetime.datetime.strftime(release_date, '%Y-%m')
 
             bundles_with_meta_data_dict[monthly_bundle_id] = dict()
             bundles_with_meta_data_dict[monthly_bundle_id]['bundle-name'] = bundle_name
-            bundles_with_meta_data_dict[monthly_bundle_id]['release-date'] = release_date
+            bundles_with_meta_data_dict[monthly_bundle_id][
+                'release-date'
+            ] = release_date
             bundles_with_meta_data_dict[monthly_bundle_id]['content'] = dict()
 
             bundle_content = bundles_raw_dict[bundle_name]
 
             for game_name in bundle_content:
-                (release_date, _) = get_game_release_date(game_name, matched_meta_data_dict, is_verbose)
+                (release_date, _) = get_game_release_date(
+                    game_name,
+                    matched_meta_data_dict,
+                    is_verbose,
+                )
 
                 if release_date is not None:
                     matched_name = matched_meta_data_dict[game_name]['matched-name'][0]
                     app_id = matched_meta_data_dict[game_name]['appID'][0]
 
-                    bundles_with_meta_data_dict[monthly_bundle_id]['content'][app_id] = dict()
-                    bundles_with_meta_data_dict[monthly_bundle_id]['content'][app_id]['game-name'] = matched_name
-                    bundles_with_meta_data_dict[monthly_bundle_id]['content'][app_id]['release-date'] = release_date
+                    bundles_with_meta_data_dict[monthly_bundle_id]['content'][
+                        app_id
+                    ] = dict()
+                    bundles_with_meta_data_dict[monthly_bundle_id]['content'][app_id][
+                        'game-name'
+                    ] = matched_name
+                    bundles_with_meta_data_dict[monthly_bundle_id]['content'][app_id][
+                        'release-date'
+                    ] = release_date
 
     return bundles_with_meta_data_dict
 
@@ -283,14 +340,24 @@ def build_dictionary_with_metadata(fname, is_verbose=False):
     game_names = list_all_games(bundles)
 
     num_closest_neighbors = 1
-    matched_meta_data_dict = match_all_game_names_with_app_id(game_names, num_closest_neighbors)
+    matched_meta_data_dict = match_all_game_names_with_app_id(
+        game_names,
+        num_closest_neighbors,
+    )
 
-    matched_meta_data_dict = fix_matched_meta_data_dict(matched_meta_data_dict, is_verbose)
+    matched_meta_data_dict = fix_matched_meta_data_dict(
+        matched_meta_data_dict,
+        is_verbose,
+    )
 
     if is_verbose:
         display_matches(game_names, matched_meta_data_dict)
 
-    bundles_with_meta_data = filter_dictionary_with_meta_data(bundles, matched_meta_data_dict, is_verbose)
+    bundles_with_meta_data = filter_dictionary_with_meta_data(
+        bundles,
+        matched_meta_data_dict,
+        is_verbose,
+    )
 
     return bundles_with_meta_data
 
